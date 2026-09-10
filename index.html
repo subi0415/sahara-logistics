@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SAHARA Logistics | Global Freight Forwarding & Door-to-Door Logistics</title>
+<title>SAHARA Logistics | Global Freight Forwarding</title>
 
-<meta name="description" content="SAHARA Logistics provides international ocean freight, air freight, warehousing, customs coordination and door-to-door logistics solutions across Saudi Arabia, GCC, China and global markets.">
+<meta name="description"
+content="SAHARA Logistics provides international ocean freight, air freight, road freight, warehousing and door-to-door logistics solutions connecting China, Saudi Arabia, the GCC and global markets.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap"
+rel="stylesheet">
+
 
 <style>
 
+/* =========================================================
+   SAHARA LOGISTICS
+   BILINGUAL ENGLISH / ARABIC WEBSITE
+========================================================= */
+
 :root{
-    --navy:#071827;
-    --navy2:#0c2436;
-    --blue:#123d59;
-    --gold:#c6a15b;
-    --gold2:#dfbd78;
+
+    --navy:#061725;
+    --navy-light:#0c263a;
+    --navy-mid:#12384f;
+
+    --gold:#c5a15b;
+    --gold-light:#dfc07d;
+
     --white:#ffffff;
-    --light:#f4f6f8;
-    --muted:#687784;
-    --border:#dfe5e9;
-    --dark:#071827;
-    --shadow:0 18px 45px rgba(4,18,30,.12);
+
+    --light:#f3f6f8;
+    --light-2:#e9eef2;
+
+    --text:#0b1d2b;
+    --muted:#657582;
+
+    --border:#dce4e9;
+
+    --shadow:
+        0 20px 50px rgba(3,18,31,.12);
+
 }
+
 
 *{
     margin:0;
@@ -34,1061 +60,2447 @@
     box-sizing:border-box;
 }
 
+
 html{
     scroll-behavior:smooth;
 }
 
+
 body{
-    font-family:"Inter",Arial,sans-serif;
-    color:var(--dark);
+
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
+
+    color:var(--text);
+
     background:#fff;
+
     line-height:1.6;
+
 }
+
+
+body[dir="rtl"]{
+
+    font-family:
+        "Noto Sans Arabic",
+        Arial,
+        sans-serif;
+
+}
+
 
 img{
     max-width:100%;
     display:block;
 }
 
+
 a{
     text-decoration:none;
     color:inherit;
 }
 
-.container{
-    width:min(1180px,92%);
-    margin:auto;
+
+button,
+input,
+select{
+
+    font-family:inherit;
+
 }
 
-/* =========================
+
+.container{
+
+    width:min(1180px,92%);
+
+    margin:auto;
+
+}
+
+
+/* =========================================================
    TOP BAR
-========================= */
+========================================================= */
 
 .topbar{
-    background:#04111d;
-    color:#d7e0e6;
-    font-size:12px;
-    border-bottom:1px solid rgba(255,255,255,.08);
+
+    background:#03101b;
+
+    color:#b8c5ce;
+
+    font-size:11px;
+
+    letter-spacing:.3px;
+
 }
+
 
 .topbar-inner{
+
     height:38px;
+
     display:flex;
-    justify-content:space-between;
+
     align-items:center;
+
+    justify-content:space-between;
+
 }
+
 
 .topbar-right{
+
     display:flex;
-    gap:24px;
+
+    gap:28px;
+
 }
 
-/* =========================
+
+/* =========================================================
    NAVIGATION
-========================= */
+========================================================= */
 
 .navbar{
+
     position:absolute;
+
     top:38px;
+
     left:0;
+
     width:100%;
-    z-index:1000;
-    background:rgba(4,17,29,.78);
-    backdrop-filter:blur(12px);
-    border-bottom:1px solid rgba(255,255,255,.12);
+
+    z-index:100;
+
+    background:
+        rgba(3,16,27,.84);
+
+    backdrop-filter:blur(14px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.12);
+
 }
+
 
 .nav-inner{
-    min-height:82px;
+
+    min-height:84px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:space-between;
+
 }
+
+
+/* ORIGINAL SAHARA LOGO */
 
 .logo{
+
     width:178px;
+
     height:auto;
+
     object-fit:contain;
+
 }
+
 
 .nav-links{
+
     display:flex;
+
     align-items:center;
-    gap:30px;
+
+    gap:28px;
+
 }
+
 
 .nav-links a{
+
     color:#fff;
-    font-size:13px;
+
+    font-size:12px;
+
     font-weight:600;
-    letter-spacing:.2px;
+
     transition:.25s;
+
 }
+
 
 .nav-links a:hover{
-    color:var(--gold2);
+
+    color:var(--gold-light);
+
 }
+
 
 .nav-actions{
+
     display:flex;
+
     align-items:center;
-    gap:12px;
+
+    gap:10px;
+
 }
 
-.lang{
-    border:1px solid rgba(255,255,255,.3);
+
+.lang-btn{
+
+    border:
+        1px solid rgba(255,255,255,.35);
+
+    background:transparent;
+
     color:#fff;
-    padding:8px 12px;
-    border-radius:4px;
-    font-size:12px;
+
+    padding:
+        8px 11px;
+
+    font-size:11px;
+
+    font-weight:700;
+
     cursor:pointer;
+
 }
+
+
+.lang-btn.active{
+
+    background:
+        rgba(197,161,91,.18);
+
+    border-color:var(--gold);
+
+    color:var(--gold-light);
+
+}
+
 
 .quote-btn{
+
     background:var(--gold);
+
     color:#071827;
-    padding:12px 19px;
-    border-radius:3px;
-    font-size:12px;
+
+    padding:
+        12px 18px;
+
+    font-size:11px;
+
     font-weight:800;
-    text-transform:uppercase;
+
     letter-spacing:.5px;
+
+    text-transform:uppercase;
+
 }
 
-/* =========================
+
+.mobile-menu{
+
+    display:none;
+
+    color:#fff;
+
+    font-size:24px;
+
+}
+
+
+/* =========================================================
    HERO
-========================= */
+========================================================= */
 
 .hero{
-    min-height:760px;
+
+    min-height:770px;
+
     position:relative;
-    background:
-        linear-gradient(90deg,rgba(3,15,25,.88) 0%,rgba(3,15,25,.66) 45%,rgba(3,15,25,.25) 100%),
-        url("https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=2200&q=88")
-        center/cover no-repeat;
+
+    color:#fff;
+
     display:flex;
+
     align-items:center;
-    color:white;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(3,14,24,.93) 0%,
+            rgba(3,14,24,.75) 42%,
+            rgba(3,14,24,.28) 100%
+        ),
+
+        url("https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=2400&q=90")
+
+        center center / cover no-repeat;
+
 }
+
+
+body[dir="rtl"] .hero{
+
+    background:
+
+        linear-gradient(
+            270deg,
+            rgba(3,14,24,.93) 0%,
+            rgba(3,14,24,.75) 42%,
+            rgba(3,14,24,.28) 100%
+        ),
+
+        url("https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=2400&q=90")
+
+        center center / cover no-repeat;
+
+}
+
 
 .hero-content{
-    padding-top:90px;
-    max-width:780px;
+
+    padding-top:80px;
+
+    max-width:790px;
+
 }
+
 
 .eyebrow{
-    color:var(--gold2);
-    font-size:13px;
-    font-weight:700;
+
+    color:var(--gold-light);
+
+    font-size:12px;
+
+    font-weight:800;
+
     letter-spacing:3px;
-    text-transform:uppercase;
+
     margin-bottom:20px;
+
 }
+
 
 .hero h1{
-    font-size:clamp(48px,6vw,82px);
+
+    font-size:
+        clamp(48px,6vw,82px);
+
     line-height:1.02;
+
     letter-spacing:-3px;
-    margin-bottom:26px;
+
     font-weight:800;
+
+    margin-bottom:25px;
+
 }
+
+
+body[dir="rtl"] .hero h1{
+
+    letter-spacing:0;
+
+    line-height:1.2;
+
+}
+
 
 .hero h1 span{
-    color:var(--gold2);
+
+    color:var(--gold-light);
+
 }
+
 
 .hero-text{
-    font-size:19px;
-    max-width:680px;
-    color:#e7edf1;
-    margin-bottom:34px;
+
+    max-width:670px;
+
+    font-size:18px;
+
+    color:#dce5ea;
+
+    margin-bottom:35px;
+
 }
+
 
 .hero-buttons{
+
     display:flex;
-    gap:14px;
+
+    gap:13px;
+
     flex-wrap:wrap;
+
 }
+
 
 .btn-primary{
+
+    display:inline-block;
+
     background:var(--gold);
+
     color:#071827;
-    padding:15px 26px;
-    font-size:13px;
+
+    padding:
+        15px 26px;
+
+    font-size:11px;
+
     font-weight:800;
+
+    letter-spacing:.7px;
+
     text-transform:uppercase;
-    letter-spacing:.5px;
+
 }
+
 
 .btn-outline{
-    border:1px solid rgba(255,255,255,.55);
+
+    display:inline-block;
+
+    border:
+        1px solid rgba(255,255,255,.55);
+
     color:#fff;
-    padding:14px 26px;
-    font-size:13px;
+
+    padding:
+        14px 26px;
+
+    font-size:11px;
+
     font-weight:700;
+
+    letter-spacing:.5px;
+
 }
+
 
 .hero-bottom{
+
     position:absolute;
+
     bottom:0;
+
     left:0;
+
     width:100%;
-    background:rgba(4,17,29,.88);
+
+    background:
+        rgba(3,16,27,.9);
+
     backdrop-filter:blur(10px);
+
 }
+
 
 .hero-stats{
+
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+
+    grid-template-columns:
+        repeat(4,1fr);
+
 }
+
 
 .hero-stat{
-    padding:22px 25px;
-    border-right:1px solid rgba(255,255,255,.12);
+
+    padding:
+        21px 24px;
+
+    border-right:
+        1px solid rgba(255,255,255,.12);
+
 }
+
+
+body[dir="rtl"] .hero-stat{
+
+    border-right:none;
+
+    border-left:
+        1px solid rgba(255,255,255,.12);
+
+}
+
 
 .hero-stat:last-child{
+
     border-right:none;
+
 }
+
+
+body[dir="rtl"] .hero-stat:last-child{
+
+    border-left:none;
+
+}
+
 
 .hero-stat strong{
+
     display:block;
-    font-size:24px;
+
     color:#fff;
+
+    font-size:23px;
+
+    margin-bottom:2px;
+
 }
+
 
 .hero-stat span{
-    color:#aebdc7;
-    font-size:11px;
+
+    color:#98aab5;
+
+    font-size:10px;
+
     text-transform:uppercase;
+
     letter-spacing:1px;
+
 }
 
-/* =========================
+
+/* =========================================================
    QUICK QUOTE
-========================= */
+========================================================= */
 
 .quick-quote{
-    margin-top:-45px;
+
+    margin-top:-42px;
+
     position:relative;
-    z-index:10;
+
+    z-index:20;
+
 }
 
+
 .quote-box{
-    background:white;
+
+    background:#fff;
+
+    border-top:
+        4px solid var(--gold);
+
     box-shadow:var(--shadow);
-    padding:26px;
+
+    padding:25px;
+
     display:grid;
-    grid-template-columns:1.2fr 1.2fr 1fr 1fr auto;
-    gap:12px;
-    border-top:4px solid var(--gold);
+
+    grid-template-columns:
+        1.15fr
+        1.15fr
+        1fr
+        1fr
+        auto;
+
+    gap:11px;
+
 }
+
 
 .quote-box input,
 .quote-box select{
-    height:50px;
-    border:1px solid var(--border);
-    padding:0 14px;
-    font-family:inherit;
-    color:#23313b;
+
+    height:49px;
+
+    border:
+        1px solid var(--border);
+
+    padding:
+        0 13px;
+
     background:#fff;
+
+    font-family:inherit;
+
+    font-size:12px;
+
+    color:var(--text);
+
 }
+
 
 .quote-box button{
+
+    height:49px;
+
+    padding:
+        0 23px;
+
     border:none;
+
     background:var(--navy);
-    color:white;
-    padding:0 24px;
-    font-weight:700;
+
+    color:#fff;
+
+    font-size:11px;
+
+    font-weight:800;
+
     cursor:pointer;
+
 }
 
-/* =========================
-   SECTION
-========================= */
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
 
 section{
-    padding:105px 0;
+
+    padding:
+        105px 0;
+
 }
 
-.section-head{
-    max-width:720px;
-    margin-bottom:52px;
-}
 
 .section-label{
+
     color:var(--gold);
-    text-transform:uppercase;
-    font-size:12px;
+
+    font-size:11px;
+
     font-weight:800;
-    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2.3px;
+
     margin-bottom:13px;
+
 }
+
+
+body[dir="rtl"] .section-label{
+
+    letter-spacing:0;
+
+}
+
+
+.section-head{
+
+    max-width:720px;
+
+    margin-bottom:52px;
+
+}
+
 
 .section-head h2{
-    font-size:46px;
-    line-height:1.1;
-    letter-spacing:-1.8px;
+
+    font-size:45px;
+
+    line-height:1.08;
+
+    letter-spacing:-1.7px;
+
     margin-bottom:18px;
+
 }
+
+
+body[dir="rtl"] .section-head h2{
+
+    letter-spacing:0;
+
+    line-height:1.25;
+
+}
+
 
 .section-head p{
+
     color:var(--muted);
-    font-size:16px;
+
+    font-size:15px;
+
 }
 
-/* =========================
-   WHY SAHARA
-========================= */
+
+/* =========================================================
+   WHY SAHARA LOGISTICS
+========================================================= */
 
 .why{
-    background:#f5f7f8;
+
+    background:#f4f7f9;
+
 }
+
 
 .why-grid{
+
     display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:60px;
+
+    grid-template-columns:
+        1.12fr
+        .88fr;
+
+    gap:58px;
+
     align-items:center;
+
 }
+
 
 .why-image{
-    height:570px;
-    background:
-        url("https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1400&q=85")
-        center/cover no-repeat;
+
+    height:580px;
+
     position:relative;
+
+    overflow:hidden;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(4,18,29,.05),
+            rgba(4,18,29,.38)
+        ),
+
+        url("https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1800&q=90")
+
+        center / cover no-repeat;
+
 }
 
-.image-caption{
+
+.port-overlay{
+
     position:absolute;
-    bottom:25px;
+
+    z-index:2;
+
     left:25px;
-    background:rgba(4,17,29,.9);
-    color:white;
-    padding:20px 23px;
-    max-width:300px;
+
+    bottom:25px;
+
+    background:
+        rgba(4,17,29,.93);
+
+    color:#fff;
+
+    padding:
+        21px 24px;
+
+    max-width:340px;
+
 }
 
-.image-caption strong{
+
+body[dir="rtl"] .port-overlay{
+
+    left:auto;
+
+    right:25px;
+
+}
+
+
+.port-overlay strong{
+
     display:block;
+
     font-size:18px;
-    margin-bottom:4px;
+
+    margin-bottom:5px;
+
 }
 
-.image-caption span{
-    font-size:12px;
-    color:#b8c4cc;
+
+.port-overlay span{
+
+    color:#b5c2ca;
+
+    font-size:11px;
+
 }
+
 
 .why-list{
+
     display:grid;
-    gap:30px;
+
+    gap:27px;
+
 }
+
 
 .why-item{
+
     display:grid;
-    grid-template-columns:58px 1fr;
-    gap:18px;
+
+    grid-template-columns:
+        54px 1fr;
+
+    gap:17px;
+
     padding-bottom:25px;
-    border-bottom:1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+
 }
+
+
+body[dir="rtl"] .why-item{
+
+    grid-template-columns:
+        1fr 54px;
+
+}
+
 
 .why-number{
-    width:48px;
-    height:48px;
+
+    width:45px;
+
+    height:45px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
-    border:1px solid var(--gold);
+
+    border:
+        1px solid var(--gold);
+
     color:var(--gold);
+
+    font-size:11px;
+
     font-weight:800;
-    font-size:13px;
+
 }
+
 
 .why-item h3{
-    margin-bottom:7px;
-    font-size:20px;
+
+    font-size:19px;
+
+    margin-bottom:6px;
+
 }
+
 
 .why-item p{
+
     color:var(--muted);
-    font-size:14px;
+
+    font-size:13px;
+
 }
 
-/* =========================
+
+/* =========================================================
    INTERNATIONAL FREIGHT
-========================= */
+========================================================= */
 
 .freight{
-    background:white;
+
+    background:#fff;
+
 }
+
 
 .freight-main{
+
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+        1fr 1fr;
+
     min-height:560px;
+
 }
+
 
 .freight-image{
+
     background:
-        url("https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1600&q=88")
-        center/cover no-repeat;
+
+        linear-gradient(
+            90deg,
+            rgba(3,17,29,.05),
+            rgba(3,17,29,.25)
+        ),
+
+        url("https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1800&q=90")
+
+        center / cover no-repeat;
+
 }
+
 
 .freight-content{
+
     background:var(--navy);
-    color:white;
-    padding:65px;
+
+    color:#fff;
+
+    padding:
+        65px;
+
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
 }
+
 
 .freight-content h2{
-    font-size:46px;
-    line-height:1.1;
-    margin-bottom:22px;
+
+    font-size:45px;
+
+    line-height:1.08;
+
+    margin-bottom:20px;
+
 }
+
+
+body[dir="rtl"] .freight-content h2{
+
+    line-height:1.25;
+
+}
+
 
 .freight-content p{
-    color:#c4d0d8;
+
+    color:#bdcbd4;
+
+    font-size:14px;
+
     margin-bottom:30px;
+
 }
+
 
 .freight-points{
+
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:13px;
+
 }
+
 
 .freight-point{
-    padding:16px;
-    border:1px solid rgba(255,255,255,.12);
+
+    padding:
+        16px;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
 }
+
 
 .freight-point strong{
+
     display:block;
-    color:var(--gold2);
+
+    color:var(--gold-light);
+
+    font-size:13px;
+
     margin-bottom:4px;
+
 }
+
 
 .freight-point span{
-    font-size:12px;
-    color:#b8c4cc;
+
+    color:#9fb0bb;
+
+    font-size:11px;
+
 }
 
-/* =========================
-   SERVICES
-========================= */
+
+/* =========================================================
+   OUR SERVICES
+========================================================= */
 
 .services{
-    background:#f5f7f8;
+
+    background:#f4f7f9;
+
 }
+
 
 .services-grid{
+
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+
+    grid-template-columns:
+        repeat(3,1fr);
+
     gap:20px;
+
 }
+
 
 .service-card{
-    background:white;
-    border:1px solid #e4e9ec;
-    transition:.3s;
+
+    background:#fff;
+
+    border:
+        1px solid #e1e7eb;
+
     overflow:hidden;
+
+    transition:.3s;
+
 }
+
 
 .service-card:hover{
+
     transform:translateY(-6px);
+
     box-shadow:var(--shadow);
+
 }
+
 
 .service-image{
-    height:210px;
-    background-size:cover;
+
+    height:215px;
+
     background-position:center;
+
+    background-size:cover;
+
+    position:relative;
+
 }
 
-.service-body{
-    padding:26px;
+
+.service-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 40%,
+            rgba(3,17,29,.35)
+        );
+
 }
 
-.service-body h3{
-    font-size:20px;
-    margin-bottom:10px;
-}
 
-.service-body p{
-    color:var(--muted);
-    font-size:13px;
-    margin-bottom:20px;
-}
-
-.service-link{
-    color:var(--gold);
-    text-transform:uppercase;
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:1px;
-}
-
-/* service images */
+/* OCEAN */
 
 .ocean{
-    background-image:url("https://images.unsplash.com/photo-1601584115197-04ecc0da31d8?auto=format&fit=crop&w=1200&q=85");
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1601584115197-04ecc0da31d8?auto=format&fit=crop&w=1500&q=90");
+
 }
+
+
+/* AIR */
 
 .air{
-    background-image:url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85");
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1500&q=90");
+
 }
+
+
+/* WAREHOUSE */
 
 .warehouse{
-    background-image:url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85");
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1500&q=90");
+
 }
+
+
+/* ROAD */
 
 .truck{
-    background-image:url("https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=85");
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1500&q=90");
+
 }
+
+
+/* TRADE */
 
 .customs{
-    background-image:url("https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=85");
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1500&q=90");
+
 }
+
+
+/* DOOR TO DOOR */
 
 .door{
-    background-image:url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1200&q=85");
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1500&q=90");
+
 }
 
-/* =========================
-   NETWORK
-========================= */
+
+.service-body{
+
+    padding:
+        25px;
+
+}
+
+
+.service-body h3{
+
+    font-size:19px;
+
+    margin-bottom:9px;
+
+}
+
+
+.service-body p{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+    margin-bottom:18px;
+
+}
+
+
+.service-link{
+
+    color:var(--gold);
+
+    font-size:10px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+
+body[dir="rtl"] .service-link{
+
+    letter-spacing:0;
+
+}
+
+
+/* =========================================================
+   GLOBAL LOGISTICS NETWORK
+========================================================= */
 
 .network{
-    background:var(--navy2);
-    color:white;
+
+    background:#061725;
+
+    color:#fff;
+
+    padding:
+        115px 0;
+
 }
+
 
 .network-grid{
+
     display:grid;
-    grid-template-columns:.8fr 1.2fr;
-    gap:70px;
+
+    grid-template-columns:
+        .78fr
+        1.22fr;
+
+    gap:65px;
+
     align-items:center;
+
 }
+
 
 .network h2{
-    font-size:48px;
-    line-height:1.08;
+
+    font-size:47px;
+
+    line-height:1.06;
+
+    letter-spacing:-1.5px;
+
     margin-bottom:20px;
+
 }
+
+
+body[dir="rtl"] .network h2{
+
+    letter-spacing:0;
+
+    line-height:1.25;
+
+}
+
 
 .network p{
-    color:#bcc9d1;
+
+    color:#b9c7d0;
+
+    font-size:14px;
+
 }
 
-.network-map{
-    min-height:470px;
-    background:
-        linear-gradient(rgba(7,24,39,.2),rgba(7,24,39,.2)),
-        url("https://images.unsplash.com/photo-1524666041070-9f54a9d4c1d2?auto=format&fit=crop&w=1500&q=85")
-        center/cover no-repeat;
+
+.network-visual{
+
+    height:510px;
+
     position:relative;
+
+    overflow:hidden;
+
+    background:
+
+        linear-gradient(
+            rgba(4,20,33,.22),
+            rgba(4,20,33,.55)
+        ),
+
+        url("https://images.unsplash.com/photo-1566847438217-76e82d383f84?auto=format&fit=crop&w=1800&q=90")
+
+        center / cover no-repeat;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
 }
+
+
+/* WORLD MAP */
+
+.world-map{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.42;
+
+    background-image:
+
+        url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    mix-blend-mode:screen;
+
+}
+
+
+/* ROUTES */
 
 .route{
+
     position:absolute;
-    height:1px;
-    background:var(--gold2);
+
+    height:2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--gold-light),
+            transparent
+        );
+
     transform-origin:left center;
+
+    opacity:.9;
+
 }
 
-.route.one{
-    width:260px;
+
+.route-one{
+
+    width:330px;
+
     left:20%;
-    top:55%;
-    transform:rotate(-10deg);
+
+    top:50%;
+
+    transform:rotate(5deg);
+
 }
 
-.route.two{
-    width:220px;
-    left:48%;
-    top:52%;
-    transform:rotate(12deg);
+
+.route-two{
+
+    width:270px;
+
+    left:37%;
+
+    top:54%;
+
+    transform:rotate(8deg);
+
 }
 
-.location{
-    width:12px;
-    height:12px;
-    background:var(--gold2);
-    border-radius:50%;
-    position:absolute;
-    box-shadow:0 0 0 6px rgba(223,189,120,.16);
-}
 
-.location.china{
-    left:20%;
-    top:52%;
-}
+.route-three{
 
-.location.uae{
-    left:48%;
-    top:57%;
-}
+    width:250px;
 
-.location.ksa{
-    left:61%;
-    top:62%;
-}
+    left:50%;
 
-.location.global{
-    right:15%;
     top:43%;
+
+    transform:rotate(-13deg);
+
 }
 
-/* =========================
-   ADVANTAGE
-========================= */
+
+/* MAP POINTS */
+
+.map-point{
+
+    position:absolute;
+
+    width:13px;
+
+    height:13px;
+
+    border-radius:50%;
+
+    background:var(--gold-light);
+
+    box-shadow:
+        0 0 0 7px
+        rgba(223,192,125,.16);
+
+}
+
+
+.map-point::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:5px;
+
+    height:5px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    left:4px;
+
+    top:4px;
+
+}
+
+
+.china{
+
+    left:26%;
+
+    top:43%;
+
+}
+
+
+.ksa{
+
+    left:48%;
+
+    top:61%;
+
+}
+
+
+.europe{
+
+    left:46%;
+
+    top:29%;
+
+}
+
+
+.global-point{
+
+    right:17%;
+
+    top:38%;
+
+}
+
+
+.network-label{
+
+    position:absolute;
+
+    left:25px;
+
+    bottom:25px;
+
+    padding:
+        17px 21px;
+
+    background:
+        rgba(4,17,29,.9);
+
+    border-left:
+        3px solid var(--gold);
+
+}
+
+
+body[dir="rtl"] .network-label{
+
+    left:auto;
+
+    right:25px;
+
+    border-left:none;
+
+    border-right:
+        3px solid var(--gold);
+
+}
+
+
+.network-label strong{
+
+    display:block;
+
+    font-size:16px;
+
+    margin-bottom:3px;
+
+}
+
+
+.network-label span{
+
+    color:#a9bac4;
+
+    font-size:10px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+
+body[dir="rtl"] .network-label span{
+
+    letter-spacing:0;
+
+}
+
+
+/* =========================================================
+   THE SAHARA ADVANTAGE
+========================================================= */
 
 .advantage{
-    background:white;
+
+    background:#fff;
+
 }
+
+
+.advantage-top{
+
+    display:grid;
+
+    grid-template-columns:
+        .9fr
+        1.1fr;
+
+    gap:55px;
+
+    align-items:center;
+
+    margin-bottom:55px;
+
+}
+
+
+.advantage-image{
+
+    height:420px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(3,17,29,.15),
+            rgba(3,17,29,.35)
+        ),
+
+        url("https://images.unsplash.com/photo-1565610222536-ef125c59da2e?auto=format&fit=crop&w=1700&q=90")
+
+        center / cover no-repeat;
+
+}
+
+
+.advantage-intro h2{
+
+    font-size:45px;
+
+    line-height:1.08;
+
+    letter-spacing:-1.5px;
+
+    margin-bottom:17px;
+
+}
+
+
+body[dir="rtl"] .advantage-intro h2{
+
+    letter-spacing:0;
+
+    line-height:1.25;
+
+}
+
+
+.advantage-intro p{
+
+    color:var(--muted);
+
+    font-size:14px;
+
+    max-width:590px;
+
+}
+
 
 .advantage-grid{
+
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:20px;
+
 }
+
 
 .advantage-card{
-    padding:40px 30px;
-    border:1px solid var(--border);
+
     position:relative;
+
+    padding:
+        31px 27px;
+
+    border:
+        1px solid var(--border);
+
+    background:#fff;
+
+    overflow:hidden;
+
 }
 
-.advantage-card::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:45px;
-    height:3px;
-    background:var(--gold);
+
+.advantage-card-image{
+
+    height:145px;
+
+    margin:
+        -31px -27px 25px;
+
+    background-position:center;
+
+    background-size:cover;
+
 }
 
-.advantage-card .big{
-    font-size:42px;
+
+.advantage-card-image.port{
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1566847438217-76e82d383f84?auto=format&fit=crop&w=1000&q=85");
+
+}
+
+
+.advantage-card-image.container{
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1000&q=85");
+
+}
+
+
+.advantage-card-image.logistics{
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1000&q=85");
+
+}
+
+
+.advantage-card-image.air{
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=85");
+
+}
+
+
+.advantage-card-image.warehouse{
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=85");
+
+}
+
+
+.advantage-card-image.global{
+
+    background-image:
+
+        url("https://images.unsplash.com/photo-1524666041070-9f54a9d4c1d2?auto=format&fit=crop&w=1000&q=85");
+
+}
+
+
+.advantage-number{
+
+    color:var(--gold);
+
+    font-size:10px;
+
     font-weight:800;
-    color:var(--navy);
-    margin-bottom:12px;
+
+    letter-spacing:1px;
+
+    margin-bottom:8px;
+
 }
+
 
 .advantage-card h3{
-    font-size:19px;
-    margin-bottom:10px;
+
+    font-size:18px;
+
+    margin-bottom:9px;
+
 }
+
 
 .advantage-card p{
+
     color:var(--muted);
-    font-size:13px;
+
+    font-size:12px;
+
 }
 
-/* =========================
-   HOSPITALITY
-========================= */
 
-.hospitality{
-    background:#f5f7f8;
-}
-
-.hospitality-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-}
-
-.hospitality-image{
-    min-height:520px;
-    background:
-        linear-gradient(90deg,rgba(5,20,32,.05),rgba(5,20,32,.25)),
-        url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1500&q=85")
-        center/cover no-repeat;
-}
-
-.hospitality h2{
-    font-size:45px;
-    line-height:1.1;
-    margin-bottom:20px;
-}
-
-.hospitality p{
-    color:var(--muted);
-    margin-bottom:25px;
-}
-
-.hotel-list{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-}
-
-.hotel-list div{
-    padding:13px 15px;
-    background:white;
-    border-left:3px solid var(--gold);
-    font-weight:600;
-    font-size:13px;
-}
-
-/* =========================
-   CTA
-========================= */
+/* =========================================================
+   FINAL CTA
+========================================================= */
 
 .cta{
+
+    color:#fff;
+
+    padding:
+        110px 0;
+
     background:
-        linear-gradient(90deg,rgba(4,17,29,.95),rgba(4,17,29,.78)),
-        url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2000&q=85")
-        center/cover no-repeat;
-    color:white;
-    padding:110px 0;
+
+        linear-gradient(
+            90deg,
+            rgba(3,15,25,.95),
+            rgba(3,15,25,.78)
+        ),
+
+        url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2200&q=90")
+
+        center / cover no-repeat;
+
 }
+
+
+body[dir="rtl"] .cta{
+
+    background:
+
+        linear-gradient(
+            270deg,
+            rgba(3,15,25,.95),
+            rgba(3,15,25,.78)
+        ),
+
+        url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2200&q=90")
+
+        center / cover no-repeat;
+
+}
+
 
 .cta-inner{
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
     gap:50px;
+
 }
+
 
 .cta h2{
+
     font-size:48px;
-    line-height:1.1;
-    max-width:700px;
+
+    line-height:1.08;
+
+    letter-spacing:-1.5px;
+
+    max-width:720px;
+
 }
+
+
+body[dir="rtl"] .cta h2{
+
+    letter-spacing:0;
+
+    line-height:1.25;
+
+}
+
 
 .cta p{
-    color:#c1ccd3;
-    margin-top:15px;
+
+    color:#bfcbd2;
+
+    margin-top:14px;
+
+    font-size:14px;
+
 }
 
-/* =========================
+
+/* =========================================================
    FOOTER
-========================= */
+========================================================= */
 
 footer{
+
     background:#03101b;
-    color:#c0ccd4;
-    padding:65px 0 25px;
+
+    color:#b7c4cc;
+
+    padding:
+        65px 0 25px;
+
 }
+
 
 .footer-grid{
+
     display:grid;
-    grid-template-columns:1.4fr 1fr 1fr 1.2fr;
+
+    grid-template-columns:
+        1.4fr
+        1fr
+        1fr
+        1.2fr;
+
     gap:50px;
+
     padding-bottom:45px;
-    border-bottom:1px solid rgba(255,255,255,.1);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.09);
+
 }
+
 
 .footer-logo{
+
     width:165px;
+
     margin-bottom:20px;
+
 }
+
 
 .footer-brand p{
-    font-size:13px;
+
     max-width:330px;
+
+    font-size:12px;
+
     line-height:1.8;
+
 }
+
 
 footer h4{
-    color:white;
-    margin-bottom:18px;
-    font-size:13px;
-    text-transform:uppercase;
+
+    color:#fff;
+
+    font-size:11px;
+
     letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+
 }
+
+
+body[dir="rtl"] footer h4{
+
+    letter-spacing:0;
+
+}
+
 
 .footer-links{
+
     display:grid;
+
     gap:10px;
-    font-size:13px;
+
+    font-size:12px;
+
 }
+
 
 .footer-contact{
+
     display:grid;
-    gap:12px;
-    font-size:13px;
+
+    gap:11px;
+
+    font-size:12px;
+
 }
+
 
 .footer-bottom{
-    padding-top:22px;
+
+    padding-top:21px;
+
     display:flex;
+
     justify-content:space-between;
-    font-size:11px;
-    color:#71818c;
+
+    font-size:10px;
+
+    color:#71818b;
+
 }
 
-/* =========================
+
+/* =========================================================
+   RTL FOOTER
+========================================================= */
+
+body[dir="rtl"] .footer-bottom{
+
+    text-align:right;
+
+}
+
+
+/* =========================================================
    MOBILE
-========================= */
-
-.mobile-menu{
-    display:none;
-    color:white;
-    font-size:25px;
-    cursor:pointer;
-}
+========================================================= */
 
 @media(max-width:1000px){
 
     .nav-links{
+
         display:none;
+
     }
+
 
     .mobile-menu{
+
         display:block;
+
     }
+
 
     .quote-box{
-        grid-template-columns:1fr 1fr;
+
+        grid-template-columns:
+            1fr 1fr;
+
     }
 
-    .quote-box button{
-        height:50px;
-    }
 
     .why-grid,
     .network-grid,
-    .hospitality-grid{
+    .advantage-top{
+
         grid-template-columns:1fr;
+
     }
+
 
     .services-grid{
-        grid-template-columns:1fr 1fr;
+
+        grid-template-columns:
+            1fr 1fr;
+
     }
+
 
     .advantage-grid{
-        grid-template-columns:1fr 1fr;
+
+        grid-template-columns:
+            1fr 1fr;
+
     }
+
 
     .footer-grid{
-        grid-template-columns:1fr 1fr;
+
+        grid-template-columns:
+            1fr 1fr;
+
     }
 
+
     .cta-inner{
+
         flex-direction:column;
+
         align-items:flex-start;
+
     }
+
 }
+
 
 @media(max-width:650px){
 
     .topbar{
+
         display:none;
+
     }
+
 
     .navbar{
+
         top:0;
+
     }
+
 
     .nav-inner{
+
         min-height:72px;
+
     }
+
 
     .logo{
+
         width:155px;
+
     }
 
-    .nav-actions .lang{
+
+    .nav-actions .quote-btn{
+
         display:none;
+
     }
+
 
     .hero{
-        min-height:700px;
+
+        min-height:710px;
+
     }
+
 
     .hero-content{
+
         padding-top:60px;
+
     }
+
 
     .hero h1{
+
         font-size:48px;
+
         letter-spacing:-2px;
+
     }
+
+
+    body[dir="rtl"] .hero h1{
+
+        letter-spacing:0;
+
+    }
+
 
     .hero-text{
-        font-size:16px;
+
+        font-size:15px;
+
     }
+
 
     .hero-stats{
-        grid-template-columns:1fr 1fr;
+
+        grid-template-columns:
+            1fr 1fr;
+
     }
+
 
     .hero-stat{
-        padding:14px;
+
+        padding:
+            13px;
+
     }
+
 
     .quick-quote{
+
         margin-top:0;
+
     }
+
 
     .quote-box{
+
         grid-template-columns:1fr;
+
     }
+
 
     section{
-        padding:75px 0;
+
+        padding:
+            75px 0;
+
     }
+
 
     .section-head h2{
+
         font-size:36px;
+
     }
+
 
     .why-image{
-        height:400px;
+
+        height:410px;
+
     }
+
 
     .freight-main{
+
         grid-template-columns:1fr;
+
     }
+
 
     .freight-image{
+
         min-height:350px;
+
     }
+
 
     .freight-content{
-        padding:40px 25px;
+
+        padding:
+            43px 25px;
+
     }
+
 
     .freight-content h2{
+
         font-size:37px;
+
     }
+
 
     .services-grid{
+
         grid-template-columns:1fr;
+
     }
+
+
+    .network-visual{
+
+        height:380px;
+
+    }
+
+
+    .network h2{
+
+        font-size:38px;
+
+    }
+
 
     .advantage-grid{
+
         grid-template-columns:1fr;
+
     }
 
-    .network-map{
-        min-height:350px;
-    }
 
-    .hospitality h2{
+    .advantage-intro h2{
+
         font-size:37px;
+
     }
 
-    .hotel-list{
-        grid-template-columns:1fr;
-    }
 
     .cta h2{
+
         font-size:37px;
+
     }
+
 
     .footer-grid{
+
         grid-template-columns:1fr;
+
         gap:35px;
+
     }
 
+
     .footer-bottom{
+
         flex-direction:column;
+
         gap:8px;
+
     }
 
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<!-- TOP BAR -->
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
 
 <div class="topbar">
+
     <div class="container topbar-inner">
-        <div>GLOBAL FREIGHT FORWARDING • SAUDI ARABIA • GCC</div>
+
+        <div data-en="GLOBAL FREIGHT FORWARDING • SAUDI ARABIA • GCC"
+             data-ar="الشحن الدولي • المملكة العربية السعودية • دول مجلس التعاون">
+
+            GLOBAL FREIGHT FORWARDING • SAUDI ARABIA • GCC
+
+        </div>
+
 
         <div class="topbar-right">
-            <span>China</span>
-            <span>UAE</span>
-            <span>Saudi Arabia</span>
+
+            <span>CHINA</span>
+
+            <span>SAUDI ARABIA</span>
+
+            <span>GLOBAL</span>
+
         </div>
+
     </div>
+
 </div>
 
 
-<!-- NAVIGATION -->
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
 <header class="navbar">
 
     <div class="container nav-inner">
 
-        <!-- YOUR ORIGINAL SAHARA LOGO -->
+
         <a href="#home">
-            <img src="logo.png" class="logo" alt="SAHARA Logistics">
+
+            <img
+                src="logo.png"
+                class="logo"
+                alt="SAHARA Logistics">
+
         </a>
+
 
         <nav class="nav-links">
 
-            <a href="#why">Why SAHARA</a>
-            <a href="#freight">Freight</a>
-            <a href="#services">Services</a>
-            <a href="#network">Network</a>
-            <a href="#advantage">Advantage</a>
-            <a href="#contact">Contact</a>
+            <a href="#why"
+               data-en="Why SAHARA"
+               data-ar="لماذا صحارى">
+                Why SAHARA
+            </a>
+
+            <a href="#freight"
+               data-en="Freight"
+               data-ar="الشحن">
+                Freight
+            </a>
+
+            <a href="#services"
+               data-en="Services"
+               data-ar="الخدمات">
+                Services
+            </a>
+
+            <a href="#network"
+               data-en="Network"
+               data-ar="الشبكة">
+                Network
+            </a>
+
+            <a href="#advantage"
+               data-en="Advantage"
+               data-ar="مزايا صحارى">
+                Advantage
+            </a>
+
+            <a href="#contact"
+               data-en="Contact"
+               data-ar="اتصل بنا">
+                Contact
+            </a>
 
         </nav>
 
+
         <div class="nav-actions">
 
-            <span class="lang">EN</span>
-            <a href="#quote" class="quote-btn">Get a Quote</a>
+            <button
+                class="lang-btn active"
+                id="enBtn"
+                onclick="setLanguage('en')">
+
+                EN
+
+            </button>
+
+
+            <button
+                class="lang-btn"
+                id="arBtn"
+                onclick="setLanguage('ar')">
+
+                العربية
+
+            </button>
+
+
+            <a
+                href="#quote"
+                class="quote-btn"
+                data-en="GET A QUOTE"
+                data-ar="احصل على عرض سعر">
+
+                GET A QUOTE
+
+            </a>
 
         </div>
 
-        <div class="mobile-menu">☰</div>
+
+        <div class="mobile-menu">
+            ☰
+        </div>
 
     </div>
 
 </header>
 
 
-<!-- HERO -->
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-<section class="hero" id="home">
+<section
+    class="hero"
+    id="home">
+
 
     <div class="container">
 
         <div class="hero-content">
 
-            <div class="eyebrow">
+
+            <div
+                class="eyebrow"
+                data-en="GLOBAL FREIGHT FORWARDING"
+                data-ar="الشحن الدولي والخدمات اللوجستية">
+
                 GLOBAL FREIGHT FORWARDING
+
             </div>
 
+
             <h1>
-                Moving Your Cargo<br>
-                <span>Beyond Borders.</span>
+
+                <span
+                    data-en="Moving Your Cargo"
+                    data-ar="نقل شحناتكم">
+
+                    Moving Your Cargo
+
+                </span>
+
+                <br>
+
+                <span
+                    data-en="Beyond Borders."
+                    data-ar="عبر الحدود">
+
+                    Beyond Borders.
+
+                </span>
+
             </h1>
 
-            <p class="hero-text">
-                Reliable international freight forwarding and door-to-door
-                logistics solutions connecting China, Saudi Arabia, the GCC
-                and global markets.
+
+            <p
+                class="hero-text"
+                data-en="Reliable international freight forwarding and door-to-door logistics solutions connecting China, Saudi Arabia, the GCC and global markets."
+                data-ar="حلول موثوقة للشحن الدولي والخدمات اللوجستية من الباب إلى الباب، تربط الصين بالمملكة العربية السعودية ودول مجلس التعاون والأسواق العالمية.">
+
+                Reliable international freight forwarding and
+                door-to-door logistics solutions connecting
+                China, Saudi Arabia, the GCC and global markets.
+
             </p>
+
 
             <div class="hero-buttons">
 
-                <a href="#quote" class="btn-primary">
-                    Request a Quote
+
+                <a
+                    href="#quote"
+                    class="btn-primary"
+                    data-en="REQUEST A QUOTE"
+                    data-ar="اطلب عرض سعر">
+
+                    REQUEST A QUOTE
+
                 </a>
 
-                <a href="#services" class="btn-outline">
-                    Explore Services
+
+                <a
+                    href="#services"
+                    class="btn-outline"
+                    data-en="EXPLORE SERVICES"
+                    data-ar="استكشف خدماتنا">
+
+                    EXPLORE SERVICES
+
                 </a>
+
 
             </div>
+
 
         </div>
 
@@ -1099,25 +2511,74 @@ footer h4{
 
         <div class="container hero-stats">
 
-            <div class="hero-stat">
-                <strong>20+</strong>
-                <span>Years Industry Experience</span>
-            </div>
 
             <div class="hero-stat">
-                <strong>China → KSA</strong>
-                <span>Core Trade Lane</span>
+
+                <strong>
+                    20+
+                </strong>
+
+                <span
+                    data-en="Years Experience"
+                    data-ar="سنوات من الخبرة">
+
+                    Years Experience
+
+                </span>
+
             </div>
 
-            <div class="hero-stat">
-                <strong>FCL / LCL</strong>
-                <span>Ocean Freight</span>
-            </div>
 
             <div class="hero-stat">
-                <strong>Door-to-Door</strong>
-                <span>End-to-End Logistics</span>
+
+                <strong>
+                    China → KSA
+                </strong>
+
+                <span
+                    data-en="Core Trade Lane"
+                    data-ar="الممر التجاري الرئيسي">
+
+                    Core Trade Lane
+
+                </span>
+
             </div>
+
+
+            <div class="hero-stat">
+
+                <strong>
+                    FCL / LCL
+                </strong>
+
+                <span
+                    data-en="Ocean Freight"
+                    data-ar="الشحن البحري">
+
+                    Ocean Freight
+
+                </span>
+
+            </div>
+
+
+            <div class="hero-stat">
+
+                <strong>
+                    Door-to-Door
+                </strong>
+
+                <span
+                    data-en="End-to-End Logistics"
+                    data-ar="خدمات لوجستية متكاملة">
+
+                    End-to-End Logistics
+
+                </span>
+
+            </div>
+
 
         </div>
 
@@ -1126,104 +2587,190 @@ footer h4{
 </section>
 
 
-<!-- QUICK QUOTE -->
+<!-- =====================================================
+     QUICK QUOTE
+===================================================== -->
 
-<div class="container quick-quote" id="quote">
+<div
+    class="container quick-quote"
+    id="quote">
 
-    <form class="quote-box"
-          action="mailto:ksa@saharaksa.com"
-          method="post"
-          enctype="text/plain">
 
-        <input type="text"
-               name="Origin"
-               placeholder="Origin">
+    <form
+        class="quote-box"
+        action="mailto:ksa@saharaksa.com"
+        method="post"
+        enctype="text/plain">
 
-        <input type="text"
-               name="Destination"
-               placeholder="Destination">
+
+        <input
+            type="text"
+            name="Origin"
+            placeholder="Origin">
+
+
+        <input
+            type="text"
+            name="Destination"
+            placeholder="Destination">
+
 
         <select name="Mode">
 
-            <option value="">Freight Mode</option>
-            <option>Ocean Freight</option>
-            <option>Air Freight</option>
-            <option>Road Freight</option>
-            <option>Door-to-Door</option>
+            <option value=""
+                    data-en="Freight Mode"
+                    data-ar="نوع الشحن">
+                Freight Mode
+            </option>
+
+            <option>
+                Ocean Freight
+            </option>
+
+            <option>
+                Air Freight
+            </option>
+
+            <option>
+                Road Freight
+            </option>
+
+            <option>
+                Door-to-Door
+            </option>
 
         </select>
 
-        <input type="text"
-               name="Cargo"
-               placeholder="Cargo / Quantity">
 
-        <button type="submit">
-            Get Quote
+        <input
+            type="text"
+            name="Cargo"
+            placeholder="Cargo / Quantity">
+
+
+        <button type="submit"
+                data-en="GET QUOTE"
+                data-ar="احصل على عرض سعر">
+
+            GET QUOTE
+
         </button>
+
 
     </form>
 
 </div>
 
 
-<!-- WHY SAHARA -->
+<!-- =====================================================
+     WHY SAHARA LOGISTICS
+===================================================== -->
 
-<section class="why" id="why">
+<section
+    class="why"
+    id="why">
+
 
     <div class="container">
 
+
         <div class="section-head">
 
-            <div class="section-label">
-                Why SAHARA Logistics
+
+            <div
+                class="section-label"
+                data-en="WHY SAHARA LOGISTICS"
+                data-ar="لماذا خدمات صحارى اللوجستية">
+
+                WHY SAHARA LOGISTICS
+
             </div>
 
-            <h2>
-                Logistics built around
-                reliability.
+
+            <h2
+                data-en="Logistics built around reliability."
+                data-ar="خدمات لوجستية تقوم على الموثوقية.">
+
+                Logistics built around reliability.
+
             </h2>
 
-            <p>
-                From origin to final destination, SAHARA coordinates
-                international freight and local logistics with one
-                clear objective: keeping your cargo moving.
+
+            <p
+                data-en="From origin to final destination, SAHARA coordinates international freight and local logistics with one clear objective: keeping your cargo moving."
+                data-ar="من نقطة الانطلاق إلى الوجهة النهائية، تنسق صحارى عمليات الشحن الدولي والخدمات اللوجستية المحلية بهدف واضح: ضمان استمرار حركة شحناتكم.">
+
+                From origin to final destination,
+                SAHARA coordinates international freight
+                and local logistics with one clear objective:
+                keeping your cargo moving.
+
             </p>
+
 
         </div>
 
 
         <div class="why-grid">
 
+
             <div class="why-image">
 
-                <div class="image-caption">
 
-                    <strong>Global Freight. Local Expertise.</strong>
+                <div class="port-overlay">
 
-                    <span>
-                        Connecting international supply chains
-                        with Saudi Arabia and the GCC.
+                    <strong
+                        data-en="Global Freight. Local Expertise."
+                        data-ar="شحن عالمي. خبرة محلية.">
+
+                        Global Freight.
+                        Local Expertise.
+
+                    </strong>
+
+
+                    <span
+                        data-en="Connecting international supply chains with Saudi Arabia and the GCC."
+                        data-ar="ربط سلاسل التوريد الدولية بالمملكة العربية السعودية ودول مجلس التعاون.">
+
+                        Connecting international supply
+                        chains with Saudi Arabia and the GCC.
+
                     </span>
 
                 </div>
+
 
             </div>
 
 
             <div class="why-list">
 
+
                 <div class="why-item">
 
-                    <div class="why-number">01</div>
+                    <div class="why-number">
+                        01
+                    </div>
 
                     <div>
 
-                        <h3>International Experience</h3>
+                        <h3
+                            data-en="International Experience"
+                            data-ar="خبرة دولية">
 
-                        <p>
+                            International Experience
+
+                        </h3>
+
+                        <p
+                            data-en="More than two decades of experience supporting international trade, sourcing and logistics operations."
+                            data-ar="أكثر من عقدين من الخبرة في دعم التجارة الدولية والتوريد والعمليات اللوجستية.">
+
                             More than two decades of experience
                             supporting international trade,
                             sourcing and logistics operations.
+
                         </p>
 
                     </div>
@@ -1233,16 +2780,28 @@ footer h4{
 
                 <div class="why-item">
 
-                    <div class="why-number">02</div>
+                    <div class="why-number">
+                        02
+                    </div>
 
                     <div>
 
-                        <h3>China–Saudi Expertise</h3>
+                        <h3
+                            data-en="China–Saudi Expertise"
+                            data-ar="خبرة في الممر التجاري بين الصين والسعودية">
 
-                        <p>
-                            Strong operational understanding of
-                            the China–Saudi supply chain and GCC
-                            import environment.
+                            China–Saudi Expertise
+
+                        </h3>
+
+                        <p
+                            data-en="Strong operational understanding of the China–Saudi supply chain and GCC import environment."
+                            data-ar="فهم عملي متعمق لسلسلة التوريد بين الصين والسعودية وبيئة الاستيراد في دول مجلس التعاون.">
+
+                            Strong operational understanding
+                            of the China–Saudi supply chain
+                            and GCC import environment.
+
                         </p>
 
                     </div>
@@ -1252,16 +2811,29 @@ footer h4{
 
                 <div class="why-item">
 
-                    <div class="why-number">03</div>
+                    <div class="why-number">
+                        03
+                    </div>
 
                     <div>
 
-                        <h3>One Point of Coordination</h3>
+                        <h3
+                            data-en="One Point of Coordination"
+                            data-ar="نقطة تنسيق واحدة">
 
-                        <p>
-                            International freight, warehousing,
-                            customs coordination and final delivery
-                            managed through one professional team.
+                            One Point of Coordination
+
+                        </h3>
+
+                        <p
+                            data-en="International freight, warehousing, customs coordination and final delivery managed through one professional team."
+                            data-ar="تنسيق الشحن الدولي والتخزين والتخليص الجمركي والتوصيل النهائي من خلال فريق مهني واحد.">
+
+                            International freight,
+                            warehousing, customs coordination
+                            and final delivery managed through
+                            one professional team.
+
                         </p>
 
                     </div>
@@ -1271,23 +2843,38 @@ footer h4{
 
                 <div class="why-item">
 
-                    <div class="why-number">04</div>
+                    <div class="why-number">
+                        04
+                    </div>
 
                     <div>
 
-                        <h3>Built for Business</h3>
+                        <h3
+                            data-en="Built for Business"
+                            data-ar="حلول مصممة للأعمال">
 
-                        <p>
-                            Reliable logistics solutions designed
-                            around schedules, cargo requirements
-                            and commercial priorities.
+                            Built for Business
+
+                        </h3>
+
+                        <p
+                            data-en="Reliable logistics solutions designed around schedules, cargo requirements and commercial priorities."
+                            data-ar="حلول لوجستية موثوقة مصممة وفق الجداول الزمنية ومتطلبات الشحن والأولويات التجارية.">
+
+                            Reliable logistics solutions
+                            designed around schedules,
+                            cargo requirements and commercial
+                            priorities.
+
                         </p>
 
                     </div>
 
                 </div>
+
 
             </div>
+
 
         </div>
 
@@ -1296,59 +2883,136 @@ footer h4{
 </section>
 
 
-<!-- INTERNATIONAL FREIGHT -->
+<!-- =====================================================
+     INTERNATIONAL FREIGHT
+===================================================== -->
 
-<section id="freight" class="freight">
+<section
+    class="freight"
+    id="freight">
+
 
     <div class="container">
 
+
         <div class="freight-main">
+
 
             <div class="freight-image"></div>
 
+
             <div class="freight-content">
 
-                <div class="section-label">
-                    International Freight
+
+                <div
+                    class="section-label"
+                    data-en="INTERNATIONAL FREIGHT"
+                    data-ar="الشحن الدولي">
+
+                    INTERNATIONAL FREIGHT
+
                 </div>
 
-                <h2>
-                    Ocean. Air.<br>
+
+                <h2
+                    data-en="Ocean. Air. Global reach."
+                    data-ar="بحر. جو. وصول عالمي.">
+
+                    Ocean.
+                    Air.
                     Global reach.
+
                 </h2>
 
-                <p>
+
+                <p
+                    data-en="We coordinate international cargo movements across major trade lanes with flexible transportation solutions tailored to your cargo and delivery requirements."
+                    data-ar="ننسق حركة الشحنات الدولية عبر أهم الممرات التجارية من خلال حلول نقل مرنة مصممة وفقاً لمتطلبات الشحنة وموعد التسليم.">
+
                     We coordinate international cargo movements
                     across major trade lanes with flexible
                     transportation solutions tailored to your
                     cargo and delivery requirements.
+
                 </p>
+
 
                 <div class="freight-points">
 
-                    <div class="freight-point">
-                        <strong>FCL</strong>
-                        <span>Full Container Load</span>
-                    </div>
 
                     <div class="freight-point">
-                        <strong>LCL</strong>
-                        <span>Less than Container Load</span>
+
+                        <strong>
+                            FCL
+                        </strong>
+
+                        <span
+                            data-en="Full Container Load"
+                            data-ar="حاوية كاملة">
+
+                            Full Container Load
+
+                        </span>
+
                     </div>
 
-                    <div class="freight-point">
-                        <strong>AIR</strong>
-                        <span>Time-sensitive cargo</span>
-                    </div>
 
                     <div class="freight-point">
-                        <strong>DOOR</strong>
-                        <span>Door-to-Door delivery</span>
+
+                        <strong>
+                            LCL
+                        </strong>
+
+                        <span
+                            data-en="Less than Container Load"
+                            data-ar="شحن جزئي">
+
+                            Less than Container Load
+
+                        </span>
+
                     </div>
+
+
+                    <div class="freight-point">
+
+                        <strong>
+                            AIR
+                        </strong>
+
+                        <span
+                            data-en="Time-sensitive cargo"
+                            data-ar="شحنات حساسة للوقت">
+
+                            Time-sensitive cargo
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="freight-point">
+
+                        <strong>
+                            DOOR
+                        </strong>
+
+                        <span
+                            data-en="Door-to-Door delivery"
+                            data-ar="توصيل من الباب إلى الباب">
+
+                            Door-to-Door delivery
+
+                        </span>
+
+                    </div>
+
 
                 </div>
 
+
             </div>
+
 
         </div>
 
@@ -1357,28 +3021,51 @@ footer h4{
 </section>
 
 
-<!-- SERVICES -->
+<!-- =====================================================
+     OUR SERVICES
+===================================================== -->
 
-<section class="services" id="services">
+<section
+    class="services"
+    id="services">
+
 
     <div class="container">
 
+
         <div class="section-head">
 
-            <div class="section-label">
-                Our Services
+
+            <div
+                class="section-label"
+                data-en="OUR SERVICES"
+                data-ar="خدماتنا">
+
+                OUR SERVICES
+
             </div>
 
-            <h2>
+
+            <h2
+                data-en="One logistics partner. Multiple solutions."
+                data-ar="شريك لوجستي واحد. حلول متعددة.">
+
                 One logistics partner.
                 Multiple solutions.
+
             </h2>
 
-            <p>
-                From international transportation to local delivery,
-                our services are designed to work together as one
-                supply chain.
+
+            <p
+                data-en="From international transportation to local delivery, our services are designed to work together as one supply chain."
+                data-ar="من النقل الدولي إلى التوصيل المحلي، تم تصميم خدماتنا للعمل معاً كسلسلة توريد متكاملة.">
+
+                From international transportation to local
+                delivery, our services are designed to work
+                together as one supply chain.
+
             </p>
+
 
         </div>
 
@@ -1386,137 +3073,262 @@ footer h4{
         <div class="services-grid">
 
 
+            <!-- OCEAN -->
+
             <div class="service-card">
 
                 <div class="service-image ocean"></div>
 
+
                 <div class="service-body">
 
-                    <h3>Ocean Freight</h3>
+                    <h3
+                        data-en="Ocean Freight"
+                        data-ar="الشحن البحري">
 
-                    <p>
+                        Ocean Freight
+
+                    </h3>
+
+
+                    <p
+                        data-en="FCL and LCL shipping solutions for international import and export cargo."
+                        data-ar="حلول شحن FCL وLCL للشحنات الدولية للاستيراد والتصدير.">
+
                         FCL and LCL shipping solutions for
                         international import and export cargo.
+
                     </p>
 
-                    <div class="service-link">
-                        Explore Service →
+
+                    <div
+                        class="service-link"
+                        data-en="EXPLORE SERVICE →"
+                        data-ar="اكتشف الخدمة ←">
+
+                        EXPLORE SERVICE →
+
                     </div>
 
                 </div>
 
             </div>
 
+
+            <!-- AIR -->
 
             <div class="service-card">
 
                 <div class="service-image air"></div>
 
+
                 <div class="service-body">
 
-                    <h3>Air Freight</h3>
+                    <h3
+                        data-en="Air Freight"
+                        data-ar="الشحن الجوي">
 
-                    <p>
-                        Fast and flexible international air
-                        cargo solutions for time-sensitive shipments.
+                        Air Freight
+
+                    </h3>
+
+
+                    <p
+                        data-en="Fast and flexible international air cargo solutions for time-sensitive shipments."
+                        data-ar="حلول سريعة ومرنة للشحن الجوي الدولي للشحنات الحساسة للوقت.">
+
+                        Fast and flexible international
+                        air cargo solutions for
+                        time-sensitive shipments.
+
                     </p>
 
-                    <div class="service-link">
-                        Explore Service →
+
+                    <div
+                        class="service-link"
+                        data-en="EXPLORE SERVICE →"
+                        data-ar="اكتشف الخدمة ←">
+
+                        EXPLORE SERVICE →
+
                     </div>
 
                 </div>
 
             </div>
 
+
+            <!-- WAREHOUSE -->
 
             <div class="service-card">
 
                 <div class="service-image warehouse"></div>
 
+
                 <div class="service-body">
 
-                    <h3>Warehousing</h3>
+                    <h3
+                        data-en="Warehousing"
+                        data-ar="التخزين">
 
-                    <p>
+                        Warehousing
+
+                    </h3>
+
+
+                    <p
+                        data-en="Storage, cargo handling and distribution support for businesses operating in Saudi Arabia."
+                        data-ar="خدمات التخزين ومناولة البضائع والتوزيع للشركات العاملة في المملكة العربية السعودية.">
+
                         Storage, cargo handling and distribution
-                        support for businesses operating in Saudi Arabia.
+                        support for businesses operating
+                        in Saudi Arabia.
+
                     </p>
 
-                    <div class="service-link">
-                        Explore Service →
+
+                    <div
+                        class="service-link"
+                        data-en="EXPLORE SERVICE →"
+                        data-ar="اكتشف الخدمة ←">
+
+                        EXPLORE SERVICE →
+
                     </div>
 
                 </div>
 
             </div>
 
+
+            <!-- ROAD -->
 
             <div class="service-card">
 
                 <div class="service-image truck"></div>
 
+
                 <div class="service-body">
 
-                    <h3>Road Freight</h3>
+                    <h3
+                        data-en="Road Freight"
+                        data-ar="النقل البري">
 
-                    <p>
-                        Reliable regional transportation connecting
-                        ports, warehouses and final destinations.
+                        Road Freight
+
+                    </h3>
+
+
+                    <p
+                        data-en="Reliable regional transportation connecting ports, warehouses and final destinations."
+                        data-ar="نقل بري إقليمي موثوق يربط الموانئ والمستودعات والوجهات النهائية.">
+
+                        Reliable regional transportation
+                        connecting ports, warehouses and
+                        final destinations.
+
                     </p>
 
-                    <div class="service-link">
-                        Explore Service →
+
+                    <div
+                        class="service-link"
+                        data-en="EXPLORE SERVICE →"
+                        data-ar="اكتشف الخدمة ←">
+
+                        EXPLORE SERVICE →
+
                     </div>
 
                 </div>
 
             </div>
 
+
+            <!-- TRADE -->
 
             <div class="service-card">
 
                 <div class="service-image customs"></div>
 
+
                 <div class="service-body">
 
-                    <h3>Trade Coordination</h3>
+                    <h3
+                        data-en="Trade Coordination"
+                        data-ar="تنسيق التجارة">
 
-                    <p>
+                        Trade Coordination
+
+                    </h3>
+
+
+                    <p
+                        data-en="Professional coordination of shipping documentation and import requirements."
+                        data-ar="تنسيق مهني لوثائق الشحن ومتطلبات الاستيراد.">
+
                         Professional coordination of shipping
                         documentation and import requirements.
+
                     </p>
 
-                    <div class="service-link">
-                        Explore Service →
+
+                    <div
+                        class="service-link"
+                        data-en="EXPLORE SERVICE →"
+                        data-ar="اكتشف الخدمة ←">
+
+                        EXPLORE SERVICE →
+
                     </div>
 
                 </div>
 
             </div>
 
+
+            <!-- DOOR -->
 
             <div class="service-card">
 
                 <div class="service-image door"></div>
 
+
                 <div class="service-body">
 
-                    <h3>Door-to-Door</h3>
+                    <h3
+                        data-en="Door-to-Door"
+                        data-ar="من الباب إلى الباب">
 
-                    <p>
-                        One coordinated logistics journey from
-                        supplier pickup to your final destination.
+                        Door-to-Door
+
+                    </h3>
+
+
+                    <p
+                        data-en="One coordinated logistics journey from supplier pickup to your final destination."
+                        data-ar="رحلة لوجستية متكاملة من استلام البضائع من المورد حتى وجهتها النهائية.">
+
+                        One coordinated logistics journey
+                        from supplier pickup to your final
+                        destination.
+
                     </p>
 
-                    <div class="service-link">
-                        Explore Service →
+
+                    <div
+                        class="service-link"
+                        data-en="EXPLORE SERVICE →"
+                        data-ar="اكتشف الخدمة ←">
+
+                        EXPLORE SERVICE →
+
                     </div>
 
                 </div>
 
             </div>
 
+
         </div>
 
     </div>
@@ -1524,78 +3336,180 @@ footer h4{
 </section>
 
 
-<!-- GLOBAL NETWORK -->
+<!-- =====================================================
+     GLOBAL LOGISTICS NETWORK
+===================================================== -->
 
-<section class="network" id="network">
+<section
+    class="network"
+    id="network">
+
 
     <div class="container network-grid">
 
+
         <div>
 
-            <div class="section-label">
-                Global Logistics Network
+
+            <div
+                class="section-label"
+                data-en="GLOBAL LOGISTICS NETWORK"
+                data-ar="شبكة لوجستية عالمية">
+
+                GLOBAL LOGISTICS NETWORK
+
             </div>
 
-            <h2>
-                From origin<br>
+
+            <h2
+                data-en="From origin to destination."
+                data-ar="من نقطة الانطلاق إلى الوجهة.">
+
+                From origin
                 to destination.
+
             </h2>
 
-            <p>
-                SAHARA connects international sourcing and
-                transportation networks with our operational
-                presence in Saudi Arabia and the GCC.
 
-                <br><br>
+            <p
+                data-en="SAHARA connects international sourcing and transportation networks with our operational presence in Saudi Arabia and the GCC."
+                data-ar="تربط صحارى شبكات التوريد والنقل الدولية بحضورنا التشغيلي في المملكة العربية السعودية ودول مجلس التعاون.">
 
-                Our core China–Saudi corridor enables businesses
-                to move cargo efficiently from factories and
-                suppliers to warehouses, projects, hotels and
-                commercial destinations.
+                SAHARA connects international sourcing
+                and transportation networks with our
+                operational presence in Saudi Arabia
+                and the GCC.
+
             </p>
 
+
+            <br>
+
+
+            <p
+                data-en="Our core China–Saudi corridor enables businesses to move cargo efficiently from factories and suppliers to warehouses, projects and commercial destinations."
+                data-ar="يمكّننا الممر الرئيسي بين الصين والسعودية من نقل البضائع بكفاءة من المصانع والموردين إلى المستودعات والمشاريع والوجهات التجارية.">
+
+                Our core China–Saudi corridor enables
+                businesses to move cargo efficiently
+                from factories and suppliers to
+                warehouses, projects and commercial
+                destinations.
+
+            </p>
+
+
         </div>
 
 
-        <div class="network-map">
+        <div class="network-visual">
 
-            <div class="location china"></div>
-            <div class="location uae"></div>
-            <div class="location ksa"></div>
-            <div class="location global"></div>
 
-            <div class="route one"></div>
-            <div class="route two"></div>
+            <div class="world-map"></div>
+
+
+            <div class="route route-one"></div>
+
+            <div class="route route-two"></div>
+
+            <div class="route route-three"></div>
+
+
+            <div class="map-point china"></div>
+
+            <div class="map-point ksa"></div>
+
+            <div class="map-point europe"></div>
+
+            <div class="map-point global-point"></div>
+
+
+            <div class="network-label">
+
+                <strong
+                    data-en="GLOBAL CONNECTIVITY"
+                    data-ar="اتصال عالمي">
+
+                    GLOBAL CONNECTIVITY
+
+                </strong>
+
+
+                <span
+                    data-en="China • Saudi Arabia • GCC • Worldwide"
+                    data-ar="الصين • السعودية • دول مجلس التعاون • العالم">
+
+                    China • Saudi Arabia • GCC • Worldwide
+
+                </span>
+
+            </div>
+
 
         </div>
+
 
     </div>
 
 </section>
 
 
-<!-- SAHARA ADVANTAGE -->
+<!-- =====================================================
+     THE SAHARA ADVANTAGE
+===================================================== -->
 
-<section class="advantage" id="advantage">
+<section
+    class="advantage"
+    id="advantage">
+
 
     <div class="container">
 
-        <div class="section-head">
 
-            <div class="section-label">
-                The SAHARA Advantage
+        <div class="advantage-top">
+
+
+            <div class="advantage-image"></div>
+
+
+            <div class="advantage-intro">
+
+
+                <div
+                    class="section-label"
+                    data-en="THE SAHARA ADVANTAGE"
+                    data-ar="مزايا صحارى">
+
+                    THE SAHARA ADVANTAGE
+
+                </div>
+
+
+                <h2
+                    data-en="More control. Less complexity."
+                    data-ar="تحكم أكبر. تعقيد أقل.">
+
+                    More control.
+                    Less complexity.
+
+                </h2>
+
+
+                <p
+                    data-en="We combine international freight coordination with local Saudi operational capability to make cross-border logistics easier for our customers."
+                    data-ar="نجمع بين تنسيق الشحن الدولي والقدرات التشغيلية المحلية في السعودية لجعل الخدمات اللوجستية عبر الحدود أكثر سهولة لعملائنا.">
+
+                    We combine international freight
+                    coordination with local Saudi
+                    operational capability to make
+                    cross-border logistics easier for
+                    our customers.
+
+                </p>
+
+
             </div>
 
-            <h2>
-                More control.
-                Less complexity.
-            </h2>
-
-            <p>
-                We combine international freight coordination
-                with local Saudi operational capability to make
-                cross-border logistics easier for our customers.
-            </p>
 
         </div>
 
@@ -1605,276 +3519,471 @@ footer h4{
 
             <div class="advantage-card">
 
-                <div class="big">20+</div>
+                <div
+                    class="advantage-card-image port">
+                </div>
 
-                <h3>
-                    Years of Experience
+
+                <div class="advantage-number">
+                    01
+                </div>
+
+
+                <h3
+                    data-en="International Experience"
+                    data-ar="خبرة دولية">
+
+                    International Experience
+
                 </h3>
 
-                <p>
+
+                <p
+                    data-en="Long-standing experience across international trade, sourcing and logistics."
+                    data-ar="خبرة طويلة في التجارة الدولية والتوريد والخدمات اللوجستية.">
+
                     Long-standing experience across
-                    international trade, hotel supply
+                    international trade, sourcing
                     and logistics.
+
                 </p>
+
 
             </div>
 
 
             <div class="advantage-card">
 
-                <div class="big">3</div>
-
-                <h3>
-                    Strategic Locations
-                </h3>
-
-                <p>
-                    Operational presence connecting
-                    China, UAE and Saudi Arabia.
-                </p>
-
-            </div>
+                <div
+                    class="advantage-card-image container">
+                </div>
 
 
-            <div class="advantage-card">
-
-                <div class="big">24/7</div>
-
-                <h3>
-                    Supply Chain Mindset
-                </h3>
-
-                <p>
-                    Coordinated logistics support focused
-                    on keeping your business moving.
-                </p>
-
-            </div>
+                <div class="advantage-number">
+                    02
+                </div>
 
 
-            <div class="advantage-card">
+                <h3
+                    data-en="Container Logistics"
+                    data-ar="الخدمات اللوجستية للحاويات">
 
-                <div class="big">FCL</div>
-
-                <h3>
                     Container Logistics
+
                 </h3>
 
-                <p>
-                    Flexible full-container solutions for
-                    commercial and project cargo.
+
+                <p
+                    data-en="Flexible FCL and LCL solutions supporting commercial cargo movements."
+                    data-ar="حلول مرنة للشحن الكامل والجزئي لدعم حركة الشحنات التجارية.">
+
+                    Flexible FCL and LCL solutions
+                    supporting commercial cargo
+                    movements.
+
                 </p>
+
 
             </div>
 
 
             <div class="advantage-card">
 
-                <div class="big">AIR</div>
+                <div
+                    class="advantage-card-image logistics">
+                </div>
 
-                <h3>
+
+                <div class="advantage-number">
+                    03
+                </div>
+
+
+                <h3
+                    data-en="Regional Transportation"
+                    data-ar="النقل الإقليمي">
+
+                    Regional Transportation
+
+                </h3>
+
+
+                <p
+                    data-en="Coordinated road transportation connecting ports, warehouses and destinations."
+                    data-ar="نقل بري منسق يربط الموانئ والمستودعات والوجهات النهائية.">
+
+                    Coordinated road transportation
+                    connecting ports, warehouses
+                    and destinations.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="advantage-card">
+
+                <div
+                    class="advantage-card-image air">
+                </div>
+
+
+                <div class="advantage-number">
+                    04
+                </div>
+
+
+                <h3
+                    data-en="Time-Critical Cargo"
+                    data-ar="الشحنات الحساسة للوقت">
+
                     Time-Critical Cargo
+
                 </h3>
 
-                <p>
-                    Air freight solutions when speed and
-                    delivery schedules matter.
+
+                <p
+                    data-en="Air freight solutions when speed and delivery schedules matter."
+                    data-ar="حلول الشحن الجوي عندما تكون السرعة والجداول الزمنية مهمة.">
+
+                    Air freight solutions when speed
+                    and delivery schedules matter.
+
                 </p>
+
 
             </div>
 
 
             <div class="advantage-card">
 
-                <div class="big">1→1</div>
+                <div
+                    class="advantage-card-image warehouse">
+                </div>
 
-                <h3>
-                    Direct Coordination
+
+                <div class="advantage-number">
+                    05
+                </div>
+
+
+                <h3
+                    data-en="Saudi Warehousing"
+                    data-ar="التخزين في السعودية">
+
+                    Saudi Warehousing
+
                 </h3>
 
-                <p>
-                    One professional contact coordinating
-                    the logistics journey from start to finish.
+
+                <p
+                    data-en="Local storage and cargo handling support for businesses operating in Saudi Arabia."
+                    data-ar="خدمات التخزين ومناولة البضائع محلياً للشركات العاملة في المملكة العربية السعودية.">
+
+                    Local storage and cargo handling
+                    support for businesses operating
+                    in Saudi Arabia.
+
                 </p>
 
+
             </div>
 
+
+            <div class="advantage-card">
+
+                <div
+                    class="advantage-card-image global">
+                </div>
+
+
+                <div class="advantage-number">
+                    06
+                </div>
+
+
+                <h3
+                    data-en="End-to-End Coordination"
+                    data-ar="تنسيق متكامل من البداية إلى النهاية">
+
+                    End-to-End Coordination
+
+                </h3>
+
+
+                <p
+                    data-en="One professional logistics partner coordinating the shipment journey from origin to destination."
+                    data-ar="شريك لوجستي مهني واحد ينسق رحلة الشحنة من نقطة الانطلاق إلى الوجهة النهائية.">
+
+                    One professional logistics partner
+                    coordinating the shipment journey
+                    from origin to destination.
+
+                </p>
+
+
+            </div>
+
+
         </div>
+
 
     </div>
 
 </section>
 
 
-<!-- HOTEL LOGISTICS -->
+<!-- =====================================================
+     FINAL CTA
+===================================================== -->
 
-<section class="hospitality">
+<section
+    class="cta"
+    id="contact">
 
-    <div class="container hospitality-grid">
-
-        <div class="hospitality-image"></div>
-
-        <div>
-
-            <div class="section-label">
-                Hospitality Logistics
-            </div>
-
-            <h2>
-                Specialized logistics
-                for the hotel industry.
-            </h2>
-
-            <p>
-                SAHARA combines hotel supply expertise with
-                international freight forwarding, providing
-                hospitality businesses with a coordinated
-                supply chain from international suppliers
-                to Saudi Arabia.
-            </p>
-
-            <div class="hotel-list">
-
-                <div>Hotel Amenities</div>
-                <div>Hotel Textiles</div>
-                <div>Guest Room Supplies</div>
-                <div>Custom Products</div>
-                <div>International Freight</div>
-                <div>Door-to-Door Delivery</div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta" id="contact">
 
     <div class="container cta-inner">
 
+
         <div>
 
-            <div class="section-label">
-                Start Your Shipment
+
+            <div
+                class="section-label"
+                data-en="START YOUR SHIPMENT"
+                data-ar="ابدأ شحنتك">
+
+                START YOUR SHIPMENT
+
             </div>
 
-            <h2>
-                Tell us where your cargo needs to go.
+
+            <h2
+                data-en="Tell us where your cargo needs to go."
+                data-ar="أخبرنا إلى أين يجب أن تصل شحنتك.">
+
+                Tell us where your cargo
+                needs to go.
+
             </h2>
 
-            <p>
+
+            <p
+                data-en="From China to Saudi Arabia and beyond, let SAHARA build the right logistics solution for your business."
+                data-ar="من الصين إلى المملكة العربية السعودية وما بعدها، دع صحارى تصمم الحل اللوجستي المناسب لأعمالك.">
+
                 From China to Saudi Arabia and beyond,
-                let SAHARA build the right logistics solution
-                for your business.
+                let SAHARA build the right logistics
+                solution for your business.
+
             </p>
+
 
         </div>
 
+
         <div>
 
-            <a href="https://wa.me/966535268099"
-               class="btn-primary"
-               target="_blank">
 
-                Talk to SAHARA
+            <a
+                href="https://wa.me/966535268099"
+                class="btn-primary"
+                target="_blank"
+                data-en="TALK TO SAHARA"
+                data-ar="تواصل مع صحارى">
+
+                TALK TO SAHARA
 
             </a>
 
+
         </div>
+
 
     </div>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
 <footer>
 
+
     <div class="container">
+
 
         <div class="footer-grid">
 
 
             <div class="footer-brand">
 
-                <img src="logo.png"
-                     class="footer-logo"
-                     alt="SAHARA">
 
-                <p>
+                <img
+                    src="logo.png"
+                    class="footer-logo"
+                    alt="SAHARA">
+
+
+                <p
+                    data-en="SAHARA is a trusted one-stop solution for international freight forwarding, hotel supply and door-to-door logistics, connecting global suppliers with Saudi Arabia and the GCC."
+                    data-ar="صحارى هي شريك موثوق وحل متكامل للشحن الدولي وتوريد الفنادق والخدمات اللوجستية من الباب إلى الباب، وتربط الموردين العالميين بالمملكة العربية السعودية ودول مجلس التعاون.">
+
                     SAHARA is a trusted one-stop solution
-                    for international hotel supply and
-                    door-to-door logistics, connecting
-                    global suppliers with Saudi Arabia
-                    and the GCC.
+                    for international freight forwarding,
+                    hotel supply and door-to-door logistics,
+                    connecting global suppliers with
+                    Saudi Arabia and the GCC.
+
                 </p>
 
+
             </div>
 
 
             <div>
 
-                <h4>Logistics</h4>
+
+                <h4
+                    data-en="Logistics"
+                    data-ar="الخدمات اللوجستية">
+
+                    Logistics
+
+                </h4>
+
 
                 <div class="footer-links">
 
-                    <a href="#freight">Ocean Freight</a>
-                    <a href="#freight">Air Freight</a>
-                    <a href="#services">Road Freight</a>
-                    <a href="#services">Warehousing</a>
-                    <a href="#services">Door-to-Door</a>
+                    <a href="#freight"
+                       data-en="Ocean Freight"
+                       data-ar="الشحن البحري">
+                        Ocean Freight
+                    </a>
+
+                    <a href="#freight"
+                       data-en="Air Freight"
+                       data-ar="الشحن الجوي">
+                        Air Freight
+                    </a>
+
+                    <a href="#services"
+                       data-en="Road Freight"
+                       data-ar="النقل البري">
+                        Road Freight
+                    </a>
+
+                    <a href="#services"
+                       data-en="Warehousing"
+                       data-ar="التخزين">
+                        Warehousing
+                    </a>
+
+                    <a href="#services"
+                       data-en="Door-to-Door"
+                       data-ar="من الباب إلى الباب">
+                        Door-to-Door
+                    </a>
 
                 </div>
+
 
             </div>
 
 
             <div>
 
-                <h4>Company</h4>
+
+                <h4
+                    data-en="Company"
+                    data-ar="الشركة">
+
+                    Company
+
+                </h4>
+
 
                 <div class="footer-links">
 
-                    <a href="#why">Why SAHARA</a>
-                    <a href="#network">Global Network</a>
-                    <a href="#advantage">Our Advantage</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#why"
+                       data-en="Why SAHARA"
+                       data-ar="لماذا صحارى">
+                        Why SAHARA
+                    </a>
+
+                    <a href="#network"
+                       data-en="Global Network"
+                       data-ar="الشبكة العالمية">
+                        Global Network
+                    </a>
+
+                    <a href="#advantage"
+                       data-en="SAHARA Advantage"
+                       data-ar="مزايا صحارى">
+                        SAHARA Advantage
+                    </a>
+
+                    <a href="#contact"
+                       data-en="Contact"
+                       data-ar="اتصل بنا">
+                        Contact
+                    </a>
 
                 </div>
+
 
             </div>
 
 
             <div>
 
-                <h4>Saudi Arabia</h4>
+
+                <h4
+                    data-en="Saudi Arabia"
+                    data-ar="المملكة العربية السعودية">
+
+                    Saudi Arabia
+
+                </h4>
+
 
                 <div class="footer-contact">
 
-                    <span>
+
+                    <span
+                        data-en="Jeddah, Saudi Arabia"
+                        data-ar="جدة، المملكة العربية السعودية">
+
                         Jeddah, Saudi Arabia
+
                     </span>
+
 
                     <span>
                         +966 53 526 8099
                     </span>
 
+
                     <span>
                         ksa@saharaksa.com
                     </span>
 
-                    <span>
+
+                    <span
+                        data-en="86W2+9RH As Sarawat, Jeddah, Saudi Arabia"
+                        data-ar="86W2+9RH، السروات، جدة، المملكة العربية السعودية">
+
                         86W2+9RH As Sarawat,
                         Jeddah, Saudi Arabia
+
                     </span>
 
+
                 </div>
+
 
             </div>
 
@@ -1884,44 +3993,123 @@ footer h4{
 
         <div class="footer-bottom">
 
-            <span>
-                © 2026 SAHARA Logistics. All Rights Reserved.
+
+            <span
+                data-en="© 2026 SAHARA Logistics. All Rights Reserved."
+                data-ar="© 2026 صحارى للخدمات اللوجستية. جميع الحقوق محفوظة.">
+
+                © 2026 SAHARA Logistics.
+                All Rights Reserved.
+
             </span>
 
-            <span>
-                Global Freight Forwarding • Saudi Arabia
+
+            <span
+                data-en="China • Saudi Arabia • GCC • Worldwide"
+                data-ar="الصين • السعودية • دول مجلس التعاون • العالم">
+
+                China • Saudi Arabia • GCC • Worldwide
+
             </span>
+
 
         </div>
+
 
     </div>
 
 </footer>
 
 
+<!-- =====================================================
+     LANGUAGE SCRIPT
+===================================================== -->
+
 <script>
 
-document.querySelectorAll('a[href^="#"]').forEach(function(link){
 
-    link.addEventListener("click",function(e){
+function setLanguage(language){
 
-        const target=document.querySelector(this.getAttribute("href"));
+    const elements =
+        document.querySelectorAll("[data-en]");
 
-        if(target){
 
-            e.preventDefault();
+    elements.forEach(function(element){
 
-            target.scrollIntoView({
-                behavior:"smooth"
-            });
+        if(language === "ar"){
+
+            element.textContent =
+                element.getAttribute("data-ar");
+
+        }else{
+
+            element.textContent =
+                element.getAttribute("data-en");
 
         }
 
     });
 
-});
+
+    document.documentElement.lang =
+        language;
+
+    document.documentElement.dir =
+        language === "ar"
+            ? "rtl"
+            : "ltr";
+
+
+    document.body.dir =
+        language === "ar"
+            ? "rtl"
+            : "ltr";
+
+
+    document.getElementById("enBtn")
+        .classList
+        .toggle(
+            "active",
+            language === "en"
+        );
+
+
+    document.getElementById("arBtn")
+        .classList
+        .toggle(
+            "active",
+            language === "ar"
+        );
+
+
+    localStorage.setItem(
+        "saharaLanguage",
+        language
+    );
+
+}
+
+
+/* =========================================================
+   LOAD SAVED LANGUAGE
+========================================================= */
+
+const savedLanguage =
+    localStorage.getItem(
+        "saharaLanguage"
+    );
+
+
+if(savedLanguage){
+
+    setLanguage(savedLanguage);
+
+}
+
 
 </script>
 
+
 </body>
+
 </html>
