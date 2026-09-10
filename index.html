@@ -1,3589 +1,3262 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SAHARA KSA Logistics | China to Saudi Arabia</title>
+<meta name="theme-color" content="#102a1a">
 
-<meta name="description"
-content="SAHARA KSA Logistics provides China to Saudi Arabia door-to-door logistics, sea freight, air freight, customs clearance, warehousing and nationwide delivery.">
+<meta name="description" content="SAHARA KSA Logistics — professional China to Saudi Arabia door-to-door international logistics, sea freight, air freight, customs clearance, warehousing and nationwide delivery.">
 
-<meta name="keywords"
-content="China Saudi Arabia logistics, China Saudi freight forwarding, China to Saudi Arabia shipping, Saudi logistics, Jeddah freight forwarding, sea freight, air freight">
+<meta name="keywords" content="China Saudi logistics, China to Saudi Arabia shipping, door to door logistics, Saudi freight forwarding, sea freight, air freight, customs clearance, Jeddah logistics">
+
+<title>SAHARA KSA Logistics | China → Saudi Arabia</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-/* =========================================================
-   SAHARA KSA LOGISTICS
-   MAIN STYLE
-========================================================= */
-
 :root{
-
---green:#17352f;
---green-dark:#0a211d;
---green-soft:#24483f;
-
---gold:#c6a66c;
---gold-light:#e3ca96;
-
---cream:#f5f2e9;
---white:#ffffff;
---black:#07110f;
-
---text:#25332e;
---muted:#71807a;
-
---border:rgba(198,166,108,.25);
-
---shadow:0 25px 70px rgba(0,0,0,.16);
-
+  --green:#173d24;
+  --green-2:#102a1a;
+  --green-3:#285b38;
+  --gold:#c9a86a;
+  --cream:#f6f3eb;
+  --soft:#eef1eb;
+  --white:#fff;
+  --ink:#172019;
+  --muted:#69736c;
+  --line:rgba(23,61,36,.12);
+  --shadow:0 24px 70px rgba(16,42,26,.12);
+  --radius:24px;
+  --max:1220px;
 }
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 html{
-scroll-behavior:smooth;
+  scroll-behavior:smooth;
 }
 
 body{
-
-font-family:'DM Sans',sans-serif;
-
-background:#fff;
-
-color:var(--text);
-
-overflow-x:hidden;
-
+  font-family:"DM Sans",Arial,sans-serif;
+  color:var(--ink);
+  background:#fff;
+  line-height:1.6;
+  overflow-x:hidden;
 }
 
 a{
-text-decoration:none;
-color:inherit;
+  text-decoration:none;
+  color:inherit;
 }
 
 img{
-display:block;
-max-width:100%;
+  max-width:100%;
+  display:block;
+}
+
+button,
+input,
+textarea,
+select{
+  font:inherit;
 }
 
 .container{
-
-width:min(1180px,92%);
-
-margin:auto;
-
+  width:min(var(--max),calc(100% - 44px));
+  margin:auto;
 }
 
 .section{
-
-padding:110px 0;
-
-}
-
-.dark{
-
-background:var(--green-dark);
-
-color:white;
-
-}
-
-.cream{
-
-background:var(--cream);
-
+  padding:110px 0;
 }
 
 .eyebrow{
-
-font-size:11px;
-
-font-weight:700;
-
-letter-spacing:3px;
-
-text-transform:uppercase;
-
-color:var(--gold);
-
-margin-bottom:18px;
-
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:11px;
+  font-weight:700;
+  color:var(--gold);
 }
 
-.section-title{
-
-font-family:'Playfair Display',serif;
-
-font-size:clamp(40px,5vw,68px);
-
-font-weight:600;
-
-line-height:1.05;
-
-color:var(--green);
-
-margin-bottom:25px;
-
+.eyebrow:before{
+  content:"";
+  width:30px;
+  height:1px;
+  background:var(--gold);
 }
 
-.dark .section-title{
-
-color:white;
-
+h1,
+h2,
+h3{
+  line-height:1.08;
 }
 
-.section-description{
-
-max-width:720px;
-
-font-size:16px;
-
-line-height:1.85;
-
-color:var(--muted);
-
+h1,
+h2{
+  font-family:"Playfair Display",Georgia,serif;
 }
 
-.dark .section-description{
-
-color:#b9c7c2;
-
+h2{
+  font-size:clamp(38px,4.2vw,62px);
+  font-weight:600;
+  letter-spacing:-.025em;
 }
 
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-header{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-z-index:9999;
-
-transition:.35s;
-
-}
-
-header.scrolled{
-
-background:rgba(10,33,29,.96);
-
-backdrop-filter:blur(18px);
-
-box-shadow:0 10px 35px rgba(0,0,0,.18);
-
-}
-
-.navbar{
-
-height:88px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-}
-
-.logo{
-
-display:flex;
-
-align-items:center;
-
-}
-
-.logo img{
-
-width:165px;
-
-height:auto;
-
-object-fit:contain;
-
-}
-
-.nav-links{
-
-display:flex;
-
-align-items:center;
-
-gap:28px;
-
-}
-
-.nav-links a{
-
-color:white;
-
-font-size:11px;
-
-font-weight:600;
-
-letter-spacing:1.4px;
-
-text-transform:uppercase;
-
-transition:.3s;
-
-}
-
-.nav-links a:hover{
-
-color:var(--gold-light);
-
-}
-
-.nav-right{
-
-display:flex;
-
-align-items:center;
-
-gap:12px;
-
-}
-
-.language{
-
-background:transparent;
-
-border:1px solid rgba(255,255,255,.3);
-
-color:white;
-
-border-radius:30px;
-
-padding:8px 13px;
-
-font-size:11px;
-
-cursor:pointer;
-
-}
-
-.menu{
-
-display:none;
-
-color:white;
-
-font-size:26px;
-
-cursor:pointer;
-
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
-.hero{
-
-min-height:100vh;
-
-position:relative;
-
-display:flex;
-
-align-items:center;
-
-background:
-
-linear-gradient(
-90deg,
-rgba(5,20,17,.95) 0%,
-rgba(5,20,17,.80) 42%,
-rgba(5,20,17,.35) 100%
-),
-
-url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1e3?auto=format&fit=crop&w=2200&q=90")
-
-center/cover no-repeat;
-
-}
-
-.hero-content{
-
-position:relative;
-
-z-index:2;
-
-padding-top:100px;
-
-max-width:850px;
-
-}
-
-.hero-label{
-
-color:var(--gold-light);
-
-font-size:12px;
-
-font-weight:700;
-
-letter-spacing:4px;
-
-text-transform:uppercase;
-
-margin-bottom:25px;
-
-}
-
-.hero h1{
-
-font-family:'Playfair Display',serif;
-
-font-size:clamp(56px,8vw,105px);
-
-line-height:.94;
-
-font-weight:600;
-
-color:white;
-
-margin-bottom:30px;
-
-}
-
-.hero h1 span{
-
-color:var(--gold-light);
-
-}
-
-.hero-text{
-
-max-width:700px;
-
-font-size:18px;
-
-line-height:1.8;
-
-color:#d8e1de;
-
-margin-bottom:38px;
-
-}
-
-.buttons{
-
-display:flex;
-
-flex-wrap:wrap;
-
-gap:14px;
-
+p{
+  color:var(--muted);
 }
 
 .btn{
-
-display:inline-flex;
-
-align-items:center;
-
-justify-content:center;
-
-padding:15px 25px;
-
-font-size:11px;
-
-font-weight:700;
-
-letter-spacing:1.5px;
-
-text-transform:uppercase;
-
-border-radius:2px;
-
-transition:.3s;
-
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  min-height:52px;
+  padding:0 24px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  transition:.25s ease;
+  border:1px solid transparent;
+  cursor:pointer;
 }
 
-.btn-gold{
-
-background:var(--gold);
-
-color:#13231f;
-
+.btn-primary{
+  background:var(--gold);
+  color:#14251a;
 }
 
-.btn-gold:hover{
-
-background:var(--gold-light);
-
-transform:translateY(-3px);
-
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(201,168,106,.28);
 }
 
 .btn-outline{
-
-border:1px solid rgba(255,255,255,.4);
-
-color:white;
-
+  border-color:rgba(255,255,255,.35);
+  color:#fff;
+  background:rgba(255,255,255,.06);
 }
 
 .btn-outline:hover{
-
-background:white;
-
-color:var(--green);
-
-}
-
-.hero-bottom{
-
-position:absolute;
-
-bottom:35px;
-
-left:0;
-
-width:100%;
-
-z-index:3;
-
-}
-
-.hero-stats{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-border-top:1px solid rgba(255,255,255,.22);
-
-padding-top:23px;
-
-}
-
-.stat{
-
-border-right:1px solid rgba(255,255,255,.14);
-
-padding-right:20px;
-
-}
-
-.stat:last-child{
-
-border-right:0;
-
-}
-
-.stat strong{
-
-display:block;
-
-color:white;
-
-font-size:18px;
-
-margin-bottom:5px;
-
-}
-
-.stat span{
-
-color:#9eaea8;
-
-font-size:10px;
-
-letter-spacing:1.3px;
-
-text-transform:uppercase;
-
-}
-
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:80px;
-
-align-items:center;
-
-}
-
-.about-photo{
-
-position:relative;
-
-}
-
-.about-photo img{
-
-width:100%;
-
-height:580px;
-
-object-fit:cover;
-
-}
-
-.about-badge{
-
-position:absolute;
-
-right:-25px;
-
-bottom:30px;
-
-background:var(--green);
-
-padding:28px;
-
-width:190px;
-
-color:white;
-
-box-shadow:var(--shadow);
-
-}
-
-.about-badge strong{
-
-font-family:'Playfair Display',serif;
-
-font-size:42px;
-
-color:var(--gold-light);
-
-display:block;
-
-}
-
-.about-badge span{
-
-font-size:10px;
-
-line-height:1.6;
-
-text-transform:uppercase;
-
-letter-spacing:1px;
-
-}
-
-.about-text p{
-
-font-size:15px;
-
-line-height:1.9;
-
-color:#697872;
-
-margin-bottom:20px;
-
-}
-
-
-/* =========================================================
-   DOOR TO DOOR
-========================================================= */
-
-.process-head{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:end;
-
-gap:40px;
-
-margin-bottom:60px;
-
-}
-
-.process-grid{
-
-display:grid;
-
-grid-template-columns:repeat(6,1fr);
-
-}
-
-.process{
-
-padding:30px 18px;
-
-border-top:1px solid var(--border);
-
-position:relative;
-
-}
-
-.process:not(:last-child)::after{
-
-content:"→";
-
-position:absolute;
-
-right:-8px;
-
-top:28px;
-
-font-size:24px;
-
-color:var(--gold);
-
-}
-
-.process-number{
-
-font-family:'Playfair Display',serif;
-
-font-size:43px;
-
-color:var(--gold);
-
-margin-bottom:28px;
-
-}
-
-.process h3{
-
-font-size:15px;
-
-color:white;
-
-margin-bottom:12px;
-
-}
-
-.process p{
-
-font-size:12px;
-
-line-height:1.7;
-
-color:#aebdb7;
-
-}
-
-
-/* =========================================================
-   FREIGHT
-========================================================= */
-
-.freight-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:24px;
-
-margin-top:55px;
-
-}
-
-.freight-card{
-
-height:590px;
-
-position:relative;
-
-overflow:hidden;
-
-background-size:cover;
-
-background-position:center;
-
-display:flex;
-
-align-items:flex-end;
-
-padding:45px;
-
-}
-
-.sea{
-
-background-image:
-
-linear-gradient(
-0deg,
-rgba(5,20,17,.96),
-rgba(5,20,17,.04)
-),
-
-url("https://images.unsplash.com/photo-1494412685616-a5d310fbb07d?auto=format&fit=crop&w=1800&q=90");
-
-}
-
-.air{
-
-background-image:
-
-linear-gradient(
-0deg,
-rgba(5,20,17,.96),
-rgba(5,20,17,.04)
-),
-
-url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=90");
-
-}
-
-.freight-content{
-
-position:relative;
-
-z-index:2;
-
-color:white;
-
-}
-
-.freight-label{
-
-font-size:11px;
-
-letter-spacing:3px;
-
-text-transform:uppercase;
-
-color:var(--gold-light);
-
-margin-bottom:10px;
-
-}
-
-.freight-card h3{
-
-font-family:'Playfair Display',serif;
-
-font-size:55px;
-
-margin-bottom:8px;
-
-}
-
-.freight-time{
-
-font-size:28px;
-
-color:var(--gold-light);
-
-margin-bottom:18px;
-
-}
-
-.freight-content p{
-
-font-size:14px;
-
-line-height:1.7;
-
-color:#d0dad6;
-
-max-width:470px;
-
-}
-
-.tags{
-
-display:flex;
-
-flex-wrap:wrap;
-
-gap:8px;
-
-margin-top:20px;
-
-}
-
-.tags span{
-
-border:1px solid rgba(255,255,255,.2);
-
-padding:7px 10px;
-
-font-size:9px;
-
-letter-spacing:1px;
-
-text-transform:uppercase;
-
-}
-
-
-/* =========================================================
-   SERVICES
-========================================================= */
-
-.services-grid{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:1px;
-
-background:var(--border);
-
-margin-top:60px;
-
-}
-
-.service{
-
-background:white;
-
-padding:40px 28px;
-
-min-height:260px;
-
-transition:.35s;
-
-}
-
-.service:hover{
-
-background:var(--green);
-
-color:white;
-
-transform:translateY(-5px);
-
-}
-
-.service-number{
-
-font-family:'Playfair Display',serif;
-
-font-size:30px;
-
-color:var(--gold);
-
-margin-bottom:25px;
-
-}
-
-.service h3{
-
-font-size:16px;
-
-margin-bottom:12px;
-
-}
-
-.service p{
-
-font-size:12px;
-
-line-height:1.75;
-
-color:#74817c;
-
-}
-
-.service:hover p{
-
-color:#c4d1cd;
-
-}
-
-
-/* =========================================================
-   NETWORK
-========================================================= */
-
-.network{
-
-background:
-
-linear-gradient(
-90deg,
-rgba(8,30,26,.96),
-rgba(8,30,26,.83)
-),
-
-url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2200&q=90")
-
-center/cover;
-
-}
-
-.network-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:80px;
-
-align-items:center;
-
-}
-
-.locations{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:12px;
-
-margin-top:35px;
-
-}
-
-.location{
-
-border-bottom:1px solid rgba(255,255,255,.1);
-
-padding:12px 0;
-
-color:#d3ddd9;
-
-font-size:13px;
-
-}
-
-.location strong{
-
-display:block;
-
-color:var(--gold-light);
-
-font-size:9px;
-
-letter-spacing:1.5px;
-
-text-transform:uppercase;
-
-margin-bottom:4px;
-
-}
-
-.route{
-
-height:470px;
-
-border:1px solid rgba(198,166,108,.3);
-
-background:rgba(255,255,255,.025);
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-.route-line{
-
-position:absolute;
-
-width:68%;
-
-left:16%;
-
-top:50%;
-
-border-top:2px dashed var(--gold);
-
-transform:rotate(-8deg);
-
-}
-
-.route-point{
-
-position:absolute;
-
-font-size:11px;
-
-letter-spacing:1px;
-
-color:white;
-
-}
-
-.route-point::before{
-
-content:"";
-
-display:block;
-
-width:10px;
-
-height:10px;
-
-border-radius:50%;
-
-background:var(--gold);
-
-box-shadow:0 0 0 8px rgba(198,166,108,.12);
-
-margin-bottom:10px;
-
-}
-
-.china{
-
-left:10%;
-
-top:24%;
-
-}
-
-.saudi{
-
-right:10%;
-
-bottom:24%;
-
-}
-
-
-/* =========================================================
-   WHY
-========================================================= */
-
-.why-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:80px;
-
-}
-
-.why-list{
-
-margin-top:45px;
-
-}
-
-.why{
-
-display:flex;
-
-gap:20px;
-
-padding:23px 0;
-
-border-bottom:1px solid #ddd9cf;
-
-}
-
-.check{
-
-width:43px;
-
-height:43px;
-
-border:1px solid var(--gold);
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-color:var(--gold);
-
-flex-shrink:0;
-
-}
-
-.why h3{
-
-font-size:16px;
-
-margin-bottom:7px;
-
-}
-
-.why p{
-
-font-size:12px;
-
-line-height:1.7;
-
-color:#74817c;
-
-}
-
-.why-image{
-
-min-height:650px;
-
-background:
-
-linear-gradient(
-0deg,
-rgba(8,30,26,.4),
-rgba(8,30,26,.05)
-),
-
-url("https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1600&q=90")
-
-center/cover;
-
-position:relative;
-
-}
-
-.image-caption{
-
-position:absolute;
-
-left:30px;
-
-right:30px;
-
-bottom:30px;
-
-background:rgba(8,30,26,.93);
-
-padding:30px;
-
-color:white;
-
-}
-
-.image-caption strong{
-
-font-family:'Playfair Display',serif;
-
-font-size:27px;
-
-display:block;
-
-margin-bottom:8px;
-
-}
-
-.image-caption span{
-
-font-size:11px;
-
-color:#aebcb7;
-
-}
-
-
-/* =========================================================
-   QUOTE
-========================================================= */
-
-.quote-grid{
-
-display:grid;
-
-grid-template-columns:.8fr 1.2fr;
-
-gap:80px;
-
-align-items:start;
-
-}
-
-.contact{
-
-border-top:1px solid var(--gold);
-
-margin-top:40px;
-
-padding-top:28px;
-
-}
-
-.contact-label{
-
-font-size:10px;
-
-letter-spacing:2px;
-
-text-transform:uppercase;
-
-color:var(--gold);
-
-margin-bottom:8px;
-
-}
-
-.contact-name{
-
-font-size:24px;
-
-color:white;
-
-margin-bottom:25px;
-
-}
-
-.contact-line{
-
-font-size:13px;
-
-color:#c2d0cb;
-
-margin:13px 0;
-
-}
-
-.contact-line a:hover{
-
-color:var(--gold-light);
-
-}
-
-.quote-form{
-
-background:white;
-
-padding:42px;
-
-}
-
-.form-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:18px;
-
-}
-
-.form-group{
-
-margin-bottom:4px;
-
-}
-
-.form-group.full{
-
-grid-column:1/-1;
-
-}
-
-label{
-
-display:block;
-
-font-size:9px;
-
-font-weight:700;
-
-letter-spacing:1.4px;
-
-text-transform:uppercase;
-
-color:#697670;
-
-margin-bottom:8px;
-
-}
-
-input,
-select,
-textarea{
-
-width:100%;
-
-padding:14px;
-
-border:1px solid #ddd;
-
-font-family:inherit;
-
-font-size:13px;
-
-outline:none;
-
-}
-
-input:focus,
-select:focus,
-textarea:focus{
-
-border-color:var(--gold);
-
-}
-
-textarea{
-
-min-height:120px;
-
-resize:vertical;
-
-}
-
-.submit{
-
-width:100%;
-
-border:0;
-
-cursor:pointer;
-
-margin-top:18px;
-
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer{
-
-background:#061511;
-
-color:white;
-
-padding:65px 0 25px;
-
-}
-
-.footer-grid{
-
-display:grid;
-
-grid-template-columns:1.5fr 1fr 1fr 1fr;
-
-gap:45px;
-
-padding-bottom:50px;
-
-}
-
-.footer-logo img{
-
-width:170px;
-
-}
-
-.footer-description{
-
-color:#879790;
-
-font-size:12px;
-
-line-height:1.8;
-
-max-width:340px;
-
-margin-top:20px;
-
-}
-
-.footer-title{
-
-font-size:10px;
-
-letter-spacing:2px;
-
-text-transform:uppercase;
-
-color:var(--gold-light);
-
-margin-bottom:20px;
-
-}
-
-.footer-links a{
-
-display:block;
-
-font-size:12px;
-
-color:#aab8b2;
-
-margin:11px 0;
-
-transition:.3s;
-
-}
-
-.footer-links a:hover{
-
-color:white;
-
-}
-
-.footer-bottom{
-
-border-top:1px solid rgba(255,255,255,.1);
-
-padding-top:24px;
-
-display:flex;
-
-justify-content:space-between;
-
-gap:20px;
-
-font-size:10px;
-
-color:#71817a;
-
-}
-
-
-/* =========================================================
-   WHATSAPP
-========================================================= */
-
-.whatsapp{
-
-position:fixed;
-
-right:22px;
-
-bottom:22px;
-
-width:60px;
-
-height:60px;
-
-border-radius:50%;
-
-background:#25D366;
-
-color:white;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:26px;
-
-z-index:9999;
-
-box-shadow:0 12px 35px rgba(0,0,0,.25);
-
-transition:.3s;
-
-}
-
-.whatsapp:hover{
-
-transform:scale(1.08);
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media(max-width:1000px){
-
-.nav-links{
-
-position:fixed;
-
-top:88px;
-
-left:0;
-
-width:100%;
-
-background:rgba(8,30,26,.98);
-
-display:flex;
-
-flex-direction:column;
-
-padding:30px;
-
-transform:translateY(-130%);
-
-transition:.4s;
-
-}
-
-.nav-links.active{
-
-transform:translateY(0);
-
-}
-
-.menu{
-
-display:block;
-
-}
-
-.hero{
-
-min-height:900px;
-
-}
-
-.hero-bottom{
-
-position:relative;
-
-bottom:auto;
-
-padding:60px 0 30px;
-
-}
-
-.hero-stats{
-
-grid-template-columns:1fr 1fr;
-
-gap:20px;
-
-}
-
-.stat{
-
-border-right:0;
-
-}
-
-.about-grid,
-.network-grid,
-.why-grid,
-.quote-grid{
-
-grid-template-columns:1fr;
-
-gap:50px;
-
+  background:#fff;
+  color:var(--green);
 }
-
-.process-grid{
-
-grid-template-columns:1fr 1fr;
 
+.btn-dark{
+  background:var(--green);
+  color:#fff;
 }
 
-.process:not(:last-child)::after{
-
-display:none;
-
+.btn-dark:hover{
+  background:var(--green-3);
+  transform:translateY(-2px);
 }
 
-.services-grid{
 
-grid-template-columns:1fr 1fr;
+/* ================= HEADER ================= */
 
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+  transition:.3s ease;
+  border-bottom:1px solid transparent;
 }
-
-.freight-grid{
-
-grid-template-columns:1fr;
 
+.header.scrolled{
+  background:rgba(16,42,26,.96);
+  backdrop-filter:blur(14px);
+  border-bottom-color:rgba(255,255,255,.08);
 }
 
-.footer-grid{
-
-grid-template-columns:1fr 1fr;
-
+.nav{
+  height:84px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
 }
 
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:180px;
 }
 
-@media(max-width:600px){
+/* ================= LOGO ================= */
+/*
+   IMPORTANT:
+   The original SAHARA logo is NOT modified.
+   Upload your original logo as:
+   sahara-logo.png
 
-.section{
+   index.html and sahara-logo.png must be
+   in the same root folder.
+*/
 
-padding:80px 0;
-
+.logo-wrap{
+  width:125px;
+  height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:transparent;
 }
-
-.navbar{
-
-height:75px;
 
+.logo{
+  width:125px;
+  height:58px;
+  object-fit:contain;
 }
 
 .nav-links{
-
-top:75px;
-
+  display:flex;
+  align-items:center;
+  gap:30px;
+  color:#fff;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.07em;
+  text-transform:uppercase;
 }
 
-.logo img{
-
-width:140px;
-
+.nav-links a{
+  opacity:.88;
+  transition:.2s;
 }
+
+.nav-links a:hover{
+  opacity:1;
+  color:#e3c988;
+}
+
+.nav-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.lang{
+  border:1px solid rgba(255,255,255,.28);
+  background:transparent;
+  color:#fff;
+  border-radius:999px;
+  padding:9px 12px;
+  font-size:11px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.lang.active{
+  background:#fff;
+  color:var(--green);
+}
+
+.menu-btn{
+  display:none;
+  border:0;
+  background:none;
+  color:#fff;
+  font-size:25px;
+  cursor:pointer;
+}
+
+
+/* ================= HERO ================= */
 
 .hero{
+  min-height:780px;
+  height:100vh;
+  position:relative;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
 
-min-height:870px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(9,25,15,.94) 0%,
+      rgba(9,25,15,.78) 43%,
+      rgba(9,25,15,.25) 100%
+    ),
+    url("https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=2200&q=88")
+    center/cover no-repeat;
+}
 
-background-position:62% center;
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:150px;
+  background:linear-gradient(transparent,#fff);
+  opacity:.08;
+  pointer-events:none;
+}
 
+.hero-inner{
+  position:relative;
+  z-index:2;
+  padding-top:70px;
+}
+
+.hero-copy{
+  max-width:760px;
+}
+
+.hero .eyebrow{
+  margin-bottom:22px;
 }
 
 .hero h1{
-
-font-size:52px;
-
+  font-size:clamp(48px,6.4vw,92px);
+  letter-spacing:-.045em;
+  margin-bottom:26px;
 }
 
-.hero-text{
+.hero h1 span{
+  color:#dfc27d;
+}
 
-font-size:15px;
+.hero-lead{
+  font-size:18px;
+  line-height:1.8;
+  color:rgba(255,255,255,.82);
+  max-width:690px;
+}
 
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:34px;
 }
 
 .hero-stats{
-
-grid-template-columns:1fr 1fr;
-
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  max-width:850px;
+  margin-top:72px;
+  border-top:1px solid rgba(255,255,255,.18);
+  padding-top:22px;
 }
 
-.process-grid,
-.services-grid,
-.footer-grid{
+.stat{
+  padding-right:25px;
+  border-right:1px solid rgba(255,255,255,.14);
+}
 
-grid-template-columns:1fr;
+.stat:last-child{
+  border-right:0;
+}
 
+.stat strong{
+  display:block;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:28px;
+  font-weight:600;
+  color:#fff;
+}
+
+.stat span{
+  display:block;
+  color:rgba(255,255,255,.62);
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-top:4px;
+}
+
+
+/* ================= TRUST ================= */
+
+.trust{
+  background:var(--green);
+  color:#fff;
+  padding:23px 0;
+}
+
+.trust-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+
+.trust-label{
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.62);
+}
+
+.trust-items{
+  display:flex;
+  gap:28px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+
+.trust-items span{
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.08em;
+  color:rgba(255,255,255,.86);
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:85px;
+  align-items:center;
+}
+
+.about-image{
+  position:relative;
+  min-height:560px;
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.about-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position:absolute;
+  inset:0;
+}
+
+.about-image:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    180deg,
+    transparent 55%,
+    rgba(9,25,15,.5)
+  );
+}
+
+.image-badge{
+  position:absolute;
+  z-index:2;
+  bottom:26px;
+  left:26px;
+  right:26px;
+  padding:20px 22px;
+  background:rgba(255,255,255,.93);
+  backdrop-filter:blur(12px);
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.image-badge strong{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:25px;
+  color:var(--green);
+}
+
+.image-badge span{
+  display:block;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:var(--muted);
+}
+
+.about-copy .eyebrow{
+  margin-bottom:20px;
+}
+
+.about-copy h2{
+  margin-bottom:24px;
+}
+
+.about-copy>p{
+  font-size:16px;
+  line-height:1.9;
+  margin-bottom:25px;
+}
+
+.check-list{
+  list-style:none;
+  display:grid;
+  gap:13px;
+  margin-top:24px;
+}
+
+.check-list li{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  font-size:14px;
+  font-weight:600;
+}
+
+.check-list li:before{
+  content:"✓";
+  width:23px;
+  height:23px;
+  border-radius:50%;
+  background:var(--soft);
+  color:var(--green);
+  display:grid;
+  place-items:center;
+  font-size:12px;
+  font-weight:800;
+  flex:0 0 23px;
+}
+
+
+/* ================= PROCESS ================= */
+
+.process{
+  background:var(--cream);
+}
+
+.section-head{
+  max-width:780px;
+  margin-bottom:55px;
+}
+
+.section-head .eyebrow{
+  margin-bottom:20px;
+}
+
+.section-head p{
+  font-size:16px;
+  line-height:1.8;
+  margin-top:20px;
+}
+
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.process-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:30px;
+  min-height:220px;
+  position:relative;
+  overflow:hidden;
+  transition:.25s;
+}
+
+.process-card:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow);
+}
+
+.process-num{
+  font-family:"Playfair Display",Georgia,serif;
+  color:var(--gold);
+  font-size:48px;
+  line-height:1;
+}
+
+.process-card h3{
+  font-size:20px;
+  color:var(--green);
+  margin:23px 0 10px;
+}
+
+.process-card p{
+  font-size:13px;
+  line-height:1.75;
+}
+
+
+/* ================= FREIGHT ================= */
+
+.freight-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
 }
 
 .freight-card{
+  min-height:490px;
+  border-radius:var(--radius);
+  padding:45px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  color:#fff;
+  background-size:cover;
+  background-position:center;
+}
 
-height:500px;
+.freight-card:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(10,30,18,.08),
+    rgba(10,30,18,.9)
+  );
+}
 
-padding:30px;
+.freight-card>*{
+  position:relative;
+  z-index:1;
+}
 
+.freight-card.air{
+  background-image:url(
+    "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1500&q=86"
+  );
+}
+
+.freight-card.sea{
+  background-image:url(
+    "https://images.unsplash.com/photo-1601584115197-04ecc0da31d8?auto=format&fit=crop&w=1500&q=86"
+  );
+}
+
+.freight-kicker{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  color:#e0c17b;
+  margin-bottom:12px;
 }
 
 .freight-card h3{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:42px;
+  margin-bottom:13px;
+}
 
-font-size:42px;
+.freight-card p{
+  color:rgba(255,255,255,.75);
+  max-width:460px;
+}
 
+.freight-meta{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:22px;
+}
+
+.tag{
+  border:1px solid rgba(255,255,255,.24);
+  border-radius:999px;
+  padding:7px 11px;
+  font-size:10px;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  color:#fff;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services{
+  background:#f7f8f5;
+}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+
+.service{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:26px;
+  min-height:190px;
+  transition:.25s;
+}
+
+.service:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
+}
+
+.icon{
+  width:44px;
+  height:44px;
+  border-radius:13px;
+  background:var(--green);
+  color:#e0c17b;
+  display:grid;
+  place-items:center;
+  font-size:19px;
+  margin-bottom:22px;
+}
+
+.service h3{
+  font-size:17px;
+  color:var(--green);
+  margin-bottom:9px;
+}
+
+.service p{
+  font-size:12px;
+  line-height:1.7;
+}
+
+
+/* ================= NETWORK ================= */
+
+.network{
+  background:var(--green-2);
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+
+.network:before{
+  content:"";
+  position:absolute;
+  width:600px;
+  height:600px;
+  border-radius:50%;
+  border:1px solid rgba(201,168,106,.12);
+  right:-250px;
+  top:-230px;
+}
+
+.network-grid{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:80px;
+  align-items:center;
+}
+
+.network h2{
+  color:#fff;
+}
+
+.network-copy>p{
+  color:rgba(255,255,255,.68);
+  margin-top:22px;
+  line-height:1.9;
+}
+
+.region{
+  margin-top:35px;
+}
+
+.region-title{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  color:#d8ba75;
+  margin-bottom:13px;
+}
+
+.region-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.region-list span{
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:999px;
+  padding:8px 12px;
+  color:rgba(255,255,255,.78);
+  font-size:11px;
+}
+
+.route-visual{
+  min-height:470px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:28px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(201,168,106,.06),
+      rgba(255,255,255,.02)
+    ),
+    url(
+      "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1600&q=80"
+    )
+    center/cover;
+  position:relative;
+  overflow:hidden;
+}
+
+.route-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(16,42,26,.86),
+    rgba(16,42,26,.35)
+  );
+}
+
+.route-line{
+  position:absolute;
+  left:14%;
+  right:14%;
+  top:49%;
+  height:2px;
+  background:linear-gradient(
+    90deg,
+    #d4b66f,
+    #fff,
+    #d4b66f
+  );
+  box-shadow:0 0 20px rgba(201,168,106,.55);
+}
+
+.route-line:before,
+.route-line:after{
+  content:"";
+  position:absolute;
+  top:50%;
+  width:13px;
+  height:13px;
+  border-radius:50%;
+  background:#d4b66f;
+  border:3px solid rgba(255,255,255,.35);
+  transform:translateY(-50%);
+}
+
+.route-line:before{
+  left:0;
+}
+
+.route-line:after{
+  right:0;
+}
+
+.route-city{
+  position:absolute;
+  top:calc(49% + 30px);
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#fff;
+}
+
+.route-city.cn{
+  left:11%;
+}
+
+.route-city.sa{
+  right:8%;
+}
+
+.route-title{
+  position:absolute;
+  top:15%;
+  left:10%;
+  right:10%;
+  text-align:center;
+}
+
+.route-title strong{
+  display:block;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:34px;
+}
+
+.route-title span{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#d8ba75;
+}
+
+
+/* ================= WHY ================= */
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px;
+}
+
+.why-card{
+  padding:25px 18px;
+  border-top:2px solid var(--green);
+  background:#fff;
+}
+
+.why-card strong{
+  display:block;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:21px;
+  color:var(--green);
+  margin:15px 0 8px;
+}
+
+.why-card p{
+  font-size:12px;
+  line-height:1.65;
+}
+
+
+/* ================= QUOTE ================= */
+
+.quote{
+  background:var(--cream);
+}
+
+.quote-grid{
+  display:grid;
+  grid-template-columns:.72fr 1.28fr;
+  gap:70px;
+  align-items:start;
+}
+
+.quote-copy h2{
+  margin-top:18px;
+}
+
+.quote-copy>p{
+  margin-top:20px;
+  line-height:1.9;
+}
+
+.contact-box{
+  margin-top:30px;
+  padding:22px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+}
+
+.contact-box small{
+  display:block;
+  color:var(--muted);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.13em;
+  margin-bottom:7px;
+}
+
+.contact-box a{
+  display:block;
+  color:var(--green);
+  font-weight:700;
+  font-size:15px;
+  margin-bottom:4px;
+}
+
+.form{
+  background:#fff;
+  border-radius:24px;
+  padding:35px;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
 }
 
 .form-grid{
-
-grid-template-columns:1fr;
-
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
 }
 
-.form-group.full{
-
-grid-column:auto;
-
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:7px;
 }
 
-.quote-form{
+.field.full{
+  grid-column:1/-1;
+}
 
-padding:25px;
+.field label{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.11em;
+  font-weight:700;
+  color:var(--green);
+}
 
+.field input,
+.field textarea,
+.field select{
+  width:100%;
+  border:1px solid #dce2dc;
+  border-radius:12px;
+  padding:13px 14px;
+  outline:none;
+  background:#fbfcfa;
+  color:var(--ink);
+  transition:.2s;
+}
+
+.field textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus{
+  border-color:var(--gold);
+  box-shadow:0 0 0 3px rgba(201,168,106,.12);
+}
+
+.form button{
+  margin-top:18px;
+  width:100%;
+}
+
+.form-note{
+  font-size:11px;
+  color:var(--muted);
+  margin-top:12px;
+  line-height:1.6;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer{
+  background:#0b2012;
+  color:#fff;
+  padding:65px 0 25px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1fr;
+  gap:50px;
+  padding-bottom:50px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.footer-brand p{
+  color:rgba(255,255,255,.56);
+  max-width:350px;
+  margin-top:20px;
+  line-height:1.8;
+  font-size:13px;
+}
+
+.footer-title{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  color:#d8ba75;
+  margin-bottom:17px;
+}
+
+.footer-links{
+  display:grid;
+  gap:10px;
+}
+
+.footer-links a{
+  font-size:12px;
+  color:rgba(255,255,255,.66);
+}
+
+.footer-links a:hover{
+  color:#fff;
 }
 
 .footer-bottom{
-
-flex-direction:column;
-
-}
-
-.about-photo img{
-
-height:480px;
-
-}
-
-.about-badge{
-
-right:15px;
-
-}
-
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding-top:22px;
+  color:rgba(255,255,255,.42);
+  font-size:10px;
 }
 
 
-/* =========================================================
-   RTL
-========================================================= */
+/* ================= WHATSAPP ================= */
 
-body.rtl{
-
-direction:rtl;
-
+.wa{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:999;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#25d366;
+  color:#fff;
+  font-weight:800;
+  font-size:12px;
+  box-shadow:0 12px 30px rgba(0,0,0,.2);
+  transition:.25s;
 }
 
-body.rtl .hero{
-
-background:
-
-linear-gradient(
--90deg,
-rgba(5,20,17,.95) 0%,
-rgba(5,20,17,.80) 42%,
-rgba(5,20,17,.35) 100%
-),
-
-url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1e3?auto=format&fit=crop&w=2200&q=90")
-
-center/cover no-repeat;
-
+.wa:hover{
+  transform:scale(1.06);
 }
 
-body.rtl .process:not(:last-child)::after{
 
-content:"←";
+/* ================= ARABIC ================= */
 
-right:auto;
-
-left:-8px;
-
+body.ar{
+  direction:rtl;
 }
 
-body.rtl .about-badge{
+body.ar .nav-links,
+body.ar .nav-actions{
+  direction:rtl;
+}
 
-right:auto;
+body.ar .hero{
+  text-align:right;
+}
 
-left:-25px;
+body.ar .route-line:before{
+  left:auto;
+  right:0;
+}
 
+body.ar .route-line:after{
+  right:auto;
+  left:0;
+}
+
+body.ar .route-city.cn{
+  left:auto;
+  right:11%;
+}
+
+body.ar .route-city.sa{
+  right:auto;
+  left:8%;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1050px){
+
+  .nav-links{
+    gap:18px;
+  }
+
+  .services-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .why-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .footer-grid{
+    grid-template-columns:1.2fr 1fr 1fr;
+  }
+}
+
+
+@media(max-width:820px){
+
+  .container{
+    width:min(var(--max),calc(100% - 30px));
+  }
+
+  .nav{
+    height:72px;
+  }
+
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:72px;
+    left:15px;
+    right:15px;
+    background:rgba(16,42,26,.98);
+    padding:22px;
+    border-radius:18px;
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+  }
+
+  .nav-links.open{
+    display:flex;
+  }
+
+  .nav-links a{
+    padding:12px 4px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .nav-actions{
+    gap:6px;
+  }
+
+  .brand{
+    min-width:120px;
+  }
+
+  .logo-wrap,
+  .logo{
+    width:105px;
+    height:55px;
+  }
+
+  .hero{
+    min-height:760px;
+  }
+
+  .hero-stats{
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+  }
+
+  .stat:nth-child(2){
+    border-right:0;
+  }
+
+  .about-grid,
+  .network-grid,
+  .quote-grid{
+    grid-template-columns:1fr;
+    gap:45px;
+  }
+
+  .about-image{
+    min-height:430px;
+  }
+
+  .process-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .freight-grid{
+    grid-template-columns:1fr;
+  }
+
+  .why-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+
+@media(max-width:560px){
+
+  .section{
+    padding:78px 0;
+  }
+
+  h2{
+    font-size:39px;
+  }
+
+  .hero{
+    min-height:820px;
+  }
+
+  .hero h1{
+    font-size:52px;
+  }
+
+  .hero-lead{
+    font-size:15px;
+  }
+
+  .hero-buttons .btn{
+    width:100%;
+  }
+
+  .hero-stats{
+    margin-top:50px;
+  }
+
+  .trust-inner{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .trust-items{
+    justify-content:flex-start;
+  }
+
+  .process-grid,
+  .services-grid,
+  .why-grid,
+  .form-grid,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .field.full{
+    grid-column:auto;
+  }
+
+  .freight-card{
+    min-height:420px;
+    padding:30px;
+  }
+
+  .freight-card h3{
+    font-size:35px;
+  }
+
+  .route-visual{
+    min-height:380px;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+  }
+
+  .form{
+    padding:22px;
+  }
 }
 
 </style>
-
 </head>
 
 
 <body>
 
+<!-- ================= HEADER ================= -->
 
-<!-- =====================================================
-     HEADER
-===================================================== -->
+<header class="header" id="header">
 
-<header id="header">
+  <div class="container nav">
 
-<div class="container navbar">
+    <a class="brand" href="#top" aria-label="SAHARA KSA Logistics">
 
+      <!-- ORIGINAL SAHARA LOGO -->
+      <div class="logo-wrap">
+        <img
+          class="logo"
+          src="sahara-logo.png"
+          alt="SAHARA"
+        >
+      </div>
 
-<a href="#home" class="logo">
-
-<img
-src="sahara-logo.png"
-alt="SAHARA">
-
-</a>
-
-
-<nav class="nav-links" id="navLinks">
-
-<a href="#about"
-data-en="About"
-data-ar="عن الشركة">
-About
-</a>
-
-<a href="#solutions"
-data-en="Solutions"
-data-ar="الحلول">
-Solutions
-</a>
-
-<a href="#freight"
-data-en="Freight"
-data-ar="الشحن">
-Freight
-</a>
-
-<a href="#services"
-data-en="Services"
-data-ar="الخدمات">
-Services
-</a>
-
-<a href="#network"
-data-en="Network"
-data-ar="网络">
-Network
-</a>
-
-<a href="#why"
-data-en="Why SAHARA"
-data-ar="لماذا SAHARA">
-Why SAHARA
-</a>
-
-<a href="#quote"
-data-en="Get a Quote"
-data-ar="احصل على عرض سعر">
-Get a Quote
-</a>
-
-</nav>
+    </a>
 
 
-<div class="nav-right">
+    <nav class="nav-links" id="navLinks">
 
-<button
-class="language"
-id="languageBtn"
-onclick="toggleLanguage()">
-AR
-</button>
+      <a href="#about"
+         data-en="About"
+         data-ar="من نحن">
+         About
+      </a>
 
-<div
-class="menu"
-onclick="toggleMenu()">
-☰
-</div>
+      <a href="#services"
+         data-en="Services"
+         data-ar="الخدمات">
+         Services
+      </a>
 
-</div>
+      <a href="#freight"
+         data-en="Freight"
+         data-ar="الشحن">
+         Freight
+      </a>
+
+      <a href="#network"
+         data-en="Network"
+         data-ar="الشبكة">
+         Network
+      </a>
+
+      <a href="#quote"
+         data-en="Get a Quote"
+         data-ar="طلب عرض سعر">
+         Get a Quote
+      </a>
+
+    </nav>
 
 
-</div>
+    <div class="nav-actions">
+
+      <button class="lang active" id="enBtn">
+        EN
+      </button>
+
+      <button class="lang" id="arBtn">
+        AR
+      </button>
+
+      <button class="menu-btn" id="menuBtn">
+        ☰
+      </button>
+
+    </div>
+
+  </div>
 
 </header>
 
 
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<section class="hero" id="home">
-
-<div class="container">
-
-<div class="hero-content">
-
-<div class="hero-label">
-
-China → Saudi Arabia International Logistics
-
-</div>
+<main id="top">
 
 
-<h1>
+<!-- ================= HERO ================= -->
 
-From China.
+<section class="hero">
 
-<br>
+  <div class="container hero-inner">
 
-<span>To Your Door.</span>
+    <div class="hero-copy">
 
-</h1>
-
-
-<p class="hero-text">
-
-SAHARA KSA Logistics provides end-to-end
-door-to-door logistics solutions between China
-and Saudi Arabia — from pickup and export
-customs to international freight, Saudi customs
-and final delivery.
-
-</p>
+      <div
+        class="eyebrow"
+        data-en="International Logistics"
+        data-ar="الخدمات اللوجستية الدولية">
+        International Logistics
+      </div>
 
 
-<div class="buttons">
+      <h1
+        data-en="China <span>→</span> Saudi Arabia"
+        data-ar="الصين <span>→</span> المملكة العربية السعودية">
 
-<a
-href="#quote"
-class="btn btn-gold">
+        China <span>→</span> Saudi Arabia
 
-REQUEST A QUOTE
-
-</a>
+      </h1>
 
 
-<a
-href="https://wa.me/966554882896"
-target="_blank"
-class="btn btn-outline">
+      <p
+        class="hero-lead"
+        data-en="From China. To Your Door. SAHARA KSA Logistics provides end-to-end door-to-door logistics solutions between China and Saudi Arabia — with professional pickup, customs clearance, international freight, warehousing and nationwide delivery."
+        data-ar="من الصين إلى بابك. تقدم SAHARA KSA Logistics حلولاً لوجستية متكاملة من الباب إلى الباب بين الصين والمملكة العربية السعودية، تشمل الاستلام والتخليص الجمركي والشحن الدولي والتخزين والتوصيل إلى جميع أنحاء المملكة.">
 
-WHATSAPP
+        From China. To Your Door.
+        SAHARA KSA Logistics provides end-to-end door-to-door logistics solutions between China and Saudi Arabia — with professional pickup, customs clearance, international freight, warehousing and nationwide delivery.
 
-</a>
-
-</div>
-
-</div>
-
-</div>
+      </p>
 
 
-<div class="hero-bottom">
+      <div class="hero-buttons">
 
-<div class="container">
-
-<div class="hero-stats">
-
-
-<div class="stat">
-
-<strong>Door-to-Door</strong>
-
-<span>End-to-End Service</span>
-
-</div>
+        <a
+          href="#quote"
+          class="btn btn-primary"
+          data-en="Request a Quote"
+          data-ar="اطلب عرض سعر">
+          Request a Quote
+        </a>
 
 
-<div class="stat">
+        <a
+          href="https://wa.me/966554882896?text=Hello%20SAHARA%20KSA%20Logistics%2C%20I%20would%20like%20a%20quotation%20for%20China-to-Saudi%20logistics."
+          target="_blank"
+          rel="noopener"
+          class="btn btn-outline"
+          data-en="WhatsApp Us"
+          data-ar="تواصل عبر واتساب">
+          WhatsApp Us
+        </a>
 
-<strong>7–10 Days</strong>
-
-<span>Typical Air Transit</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>25–35 Days</strong>
-
-<span>Typical Sea Transit</span>
-
-</div>
+      </div>
 
 
-<div class="stat">
+      <div class="hero-stats">
 
-<strong>24 / 7</strong>
+        <div class="stat">
+          <strong>Door → Door</strong>
+          <span
+            data-en="End-to-End Service"
+            data-ar="خدمة متكاملة">
+            End-to-End Service
+          </span>
+        </div>
 
-<span>Customer Support</span>
 
-</div>
+        <div class="stat">
+          <strong>7–10 Days</strong>
+          <span
+            data-en="Air Freight"
+            data-ar="الشحن الجوي">
+            Air Freight
+          </span>
+        </div>
 
 
-</div>
+        <div class="stat">
+          <strong>25–35 Days</strong>
+          <span
+            data-en="Sea Freight"
+            data-ar="الشحن البحري">
+            Sea Freight
+          </span>
+        </div>
 
-</div>
 
-</div>
+        <div class="stat">
+          <strong>24 / 7</strong>
+          <span
+            data-en="Customer Support"
+            data-ar="دعم العملاء">
+            Customer Support
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- =====================================================
-     ABOUT
-===================================================== -->
+<!-- ================= TRADE CORRIDOR ================= -->
+
+<section class="trust">
+
+  <div class="container trust-inner">
+
+    <div
+      class="trust-label"
+      data-en="China–Saudi Trade Corridor"
+      data-ar="ممر التجارة بين الصين والسعودية">
+      China–Saudi Trade Corridor
+    </div>
+
+
+    <div class="trust-items">
+
+      <span>CHINA</span>
+      <span>SEA</span>
+      <span>AIR</span>
+      <span>CUSTOMS</span>
+      <span>WAREHOUSE</span>
+      <span>SAUDI ARABIA</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
 
 <section class="section" id="about">
 
-<div class="container about-grid">
+  <div class="container about-grid">
 
 
-<div class="about-photo">
+    <div class="about-image">
 
-<img
-src="https://images.unsplash.com/photo-1565610222536-ef125c59da2e?auto=format&fit=crop&w=1600&q=90"
-alt="Modern logistics warehouse">
+      <img
+        src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1500&q=88"
+        alt="International logistics warehouse">
 
-<div class="about-badge">
+      <div class="image-badge">
 
-<strong>ONE</strong>
+        <div>
 
-<span>
-Integrated Logistics Solution
-</span>
+          <strong>China → KSA</strong>
 
-</div>
+          <span
+            data-en="One connected logistics solution"
+            data-ar="حل لوجستي متكامل">
+            One connected logistics solution
+          </span>
 
-</div>
+        </div>
 
+        <div>SAHARA</div>
 
-<div class="about-text">
+      </div>
 
-<div class="eyebrow">
-SAHARA KSA LOGISTICS
-</div>
-
-
-<h2 class="section-title">
-
-A Reliable Bridge Between China & Saudi Arabia
-
-</h2>
+    </div>
 
 
-<p>
+    <div class="about-copy">
 
-Sahara KSA Logistics is an international
-logistics service provider focused on
-China–Saudi Arabia bilateral trade,
-supported by years of industry experience
-and a professional service team.
-
-</p>
-
-
-<p>
-
-We are more than a traditional freight
-forwarder. We provide integrated logistics
-solutions supported by professional teams,
-delivery resources and warehousing capabilities.
-
-</p>
+      <div
+        class="eyebrow"
+        data-en="Why SAHARA Logistics"
+        data-ar="لماذا SAHARA Logistics">
+        Why SAHARA Logistics
+      </div>
 
 
-<p>
+      <h2
+        data-en="A Reliable Bridge Between China & Saudi Arabia"
+        data-ar="جسر موثوق بين الصين والمملكة العربية السعودية">
 
-Our mission is to become one of the most
-reliable logistics bridges between China
-and Saudi Arabia, delivering efficient,
-secure and convenient door-to-door solutions.
+        A Reliable Bridge Between China & Saudi Arabia
 
-</p>
+      </h2>
 
 
-<a
-href="#quote"
-class="btn btn-gold">
+      <p
+        data-en="SAHARA KSA Logistics is focused on China–Saudi bilateral trade. Our professional logistics team is built to manage the journey from the supplier in China to the final destination in Saudi Arabia."
+        data-ar="تركز SAHARA KSA Logistics على التجارة الثنائية بين الصين والسعودية. فريقنا اللوجستي المحترف مصمم لإدارة الرحلة بالكامل من المورد في الصين حتى الوجهة النهائية في المملكة.">
 
-TALK TO OUR TEAM
+        SAHARA KSA Logistics is focused on China–Saudi bilateral trade.
+        Our professional logistics team is built to manage the journey
+        from the supplier in China to the final destination in Saudi Arabia.
 
-</a>
+      </p>
 
-</div>
 
-</div>
+      <p
+        data-en="We are not simply a freight broker. SAHARA combines professional logistics management, warehouse resources, delivery capabilities and coordinated customs operations into one practical door-to-door solution."
+        data-ar="نحن لسنا مجرد وسيط شحن. تجمع SAHARA بين إدارة لوجستية احترافية ومستودعات وموارد توصيل وعمليات جمركية منسقة ضمن حل عملي متكامل من الباب إلى الباب.">
+
+        We are not simply a freight broker.
+        SAHARA combines professional logistics management,
+        warehouse resources, delivery capabilities and coordinated customs operations
+        into one practical door-to-door solution.
+
+      </p>
+
+
+      <ul class="check-list">
+
+        <li
+          data-en="Professional logistics team"
+          data-ar="فريق لوجستي محترف">
+          Professional logistics team
+        </li>
+
+        <li
+          data-en="China pickup & warehouse resources"
+          data-ar="الاستلام والتخزين في الصين">
+          China pickup & warehouse resources
+        </li>
+
+        <li
+          data-en="Air & sea international freight"
+          data-ar="الشحن الدولي الجوي والبحري">
+          Air & sea international freight
+        </li>
+
+        <li
+          data-en="Saudi customs & nationwide delivery"
+          data-ar="التخليص الجمركي والتوصيل داخل المملكة">
+          Saudi customs & nationwide delivery
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- =====================================================
-     DOOR TO DOOR
-===================================================== -->
+<!-- ================= PROCESS ================= -->
 
-<section class="section dark" id="solutions">
+<section class="section process">
 
-<div class="container">
+  <div class="container">
 
+    <div class="section-head">
 
-<div class="process-head">
-
-<div>
-
-<div class="eyebrow">
-ONE-STOP LOGISTICS
-</div>
-
-<h2 class="section-title">
-
-Your Cargo.
-Our Responsibility.
-
-</h2>
-
-</div>
+      <div
+        class="eyebrow"
+        data-en="Door-to-Door"
+        data-ar="من الباب إلى الباب">
+        Door-to-Door
+      </div>
 
 
-<p class="section-description">
+      <h2
+        data-en="One Team. One Journey. One Solution."
+        data-ar="فريق واحد، رحلة واحدة، حل متكامل.">
 
-Our door-to-door service means you simply
-provide the pickup and delivery addresses.
-We manage the logistics journey from China
-to Saudi Arabia.
+        One Team. One Journey. One Solution.
 
-</p>
-
-</div>
+      </h2>
 
 
-<div class="process-grid">
+      <p
+        data-en="You provide the pickup and delivery addresses. SAHARA coordinates the rest — from collection in China to final delivery anywhere in Saudi Arabia."
+        data-ar="أنت توفر عنوان الاستلام والتسليم، وتتولى SAHARA تنسيق باقي المراحل من الاستلام في الصين حتى التسليم النهائي في أي مكان داخل المملكة.">
+
+        You provide the pickup and delivery addresses.
+        SAHARA coordinates the rest — from collection in China
+        to final delivery anywhere in Saudi Arabia.
+
+      </p>
+
+    </div>
 
 
-<div class="process">
-
-<div class="process-number">
-01
-</div>
-
-<h3>
-China Pickup
-</h3>
-
-<p>
-Pickup arrangements across major Chinese
-cities with professional logistics support.
-</p>
-
-</div>
+    <div class="process-grid">
 
 
-<div class="process">
+      <article class="process-card">
 
-<div class="process-number">
-02
-</div>
+        <div class="process-num">01</div>
 
-<h3>
-Export Customs
-</h3>
+        <h3
+          data-en="China Pickup"
+          data-ar="الاستلام في الصين">
+          China Pickup
+        </h3>
 
-<p>
-Professional export documentation and
-customs coordination.
-</p>
+        <p
+          data-en="Own pickup resources across major Chinese cities. Supplier collection can be arranged to move cargo into our logistics network."
+          data-ar="موارد استلام في المدن الصينية الرئيسية، مع إمكانية استلام البضائع من المورد وإدخالها إلى شبكتنا اللوجستية.">
 
-</div>
+          Own pickup resources across major Chinese cities.
+          Supplier collection can be arranged to move cargo into our logistics network.
 
+        </p>
 
-<div class="process">
-
-<div class="process-number">
-03
-</div>
-
-<h3>
-International Freight
-</h3>
-
-<p>
-Flexible sea or air freight according
-to your timeline and budget.
-</p>
-
-</div>
+      </article>
 
 
-<div class="process">
+      <article class="process-card">
 
-<div class="process-number">
-04
-</div>
+        <div class="process-num">02</div>
 
-<h3>
-Saudi Customs
-</h3>
+        <h3
+          data-en="Export Customs"
+          data-ar="التخليص الجمركي للتصدير">
+          Export Customs
+        </h3>
 
-<p>
-Local customs coordination and
-professional clearance support.
-</p>
+        <p
+          data-en="Professional export documentation and customs coordination to prepare cargo for international transportation."
+          data-ar="إدارة مستندات التصدير والتنسيق الجمركي بشكل احترافي لتجهيز الشحنة للنقل الدولي.">
 
-</div>
+          Professional export documentation and customs coordination
+          to prepare cargo for international transportation.
 
+        </p>
 
-<div class="process">
-
-<div class="process-number">
-05
-</div>
-
-<h3>
-Warehousing
-</h3>
-
-<p>
-Secure cargo handling, storage and
-distribution arrangements.
-</p>
-
-</div>
+      </article>
 
 
-<div class="process">
+      <article class="process-card">
 
-<div class="process-number">
-06
-</div>
+        <div class="process-num">03</div>
 
-<h3>
-Final Delivery
-</h3>
+        <h3
+          data-en="International Freight"
+          data-ar="الشحن الدولي">
+          International Freight
+        </h3>
 
-<p>
-Door-to-door delivery across Saudi
-Arabia to your destination.
-</p>
+        <p
+          data-en="Choose air or sea transportation according to cargo type, volume, urgency and budget."
+          data-ar="اختيار الشحن الجوي أو البحري وفق نوع وحجم ووقت الشحنة والميزانية.">
 
-</div>
+          Choose air or sea transportation according to cargo type,
+          volume, urgency and budget.
+
+        </p>
+
+      </article>
 
 
-</div>
+      <article class="process-card">
 
-</div>
+        <div class="process-num">04</div>
+
+        <h3
+          data-en="Saudi Customs"
+          data-ar="الجمارك السعودية">
+          Saudi Customs
+        </h3>
+
+        <p
+          data-en="Local customs coordination and clearance support with knowledge of Saudi import requirements and procedures."
+          data-ar="تنسيق ودعم التخليص الجمركي المحلي مع معرفة بمتطلبات وإجراءات الاستيراد السعودية.">
+
+          Local customs coordination and clearance support
+          with knowledge of Saudi import requirements and procedures.
+
+        </p>
+
+      </article>
+
+
+      <article class="process-card">
+
+        <div class="process-num">05</div>
+
+        <h3
+          data-en="Warehousing"
+          data-ar="التخزين">
+          Warehousing
+        </h3>
+
+        <p
+          data-en="Cargo can be received, consolidated, checked and professionally packed before onward transportation."
+          data-ar="يمكن استلام الشحنات وتجميعها وفحصها وتعبئتها بشكل احترافي قبل النقل إلى المرحلة التالية.">
+
+          Cargo can be received, consolidated, checked and professionally packed
+          before onward transportation.
+
+        </p>
+
+      </article>
+
+
+      <article class="process-card">
+
+        <div class="process-num">06</div>
+
+        <h3
+          data-en="Final Delivery"
+          data-ar="التوصيل النهائي">
+          Final Delivery
+        </h3>
+
+        <p
+          data-en="Nationwide Saudi delivery using coordinated local delivery resources, from port or warehouse to your door."
+          data-ar="توصيل إلى جميع أنحاء المملكة عبر موارد التوصيل المحلية، من الميناء أو المستودع حتى باب العميل.">
+
+          Nationwide Saudi delivery using coordinated local delivery resources,
+          from port or warehouse to your door.
+
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- =====================================================
-     FREIGHT
-===================================================== -->
+<!-- ================= FREIGHT ================= -->
 
-<section class="section cream" id="freight">
+<section class="section" id="freight">
 
-<div class="container">
+  <div class="container">
 
+    <div class="section-head">
 
-<div class="eyebrow">
-INTERNATIONAL FREIGHT
-</div>
-
-
-<h2 class="section-title">
-
-Sea or Air.
-The Right Solution.
-
-</h2>
+      <div
+        class="eyebrow"
+        data-en="International Freight"
+        data-ar="الشحن الدولي">
+        International Freight
+      </div>
 
 
-<p class="section-description">
+      <h2
+        data-en="Air When Time Matters. Sea When Cost Matters."
+        data-ar="جوي عندما يكون الوقت مهماً، وبحري عندما تكون التكلفة مهمة.">
 
-We help you balance speed, cost and cargo
-requirements with flexible international
-freight solutions.
+        Air When Time Matters. Sea When Cost Matters.
 
-</p>
-
-
-<div class="freight-grid">
+      </h2>
 
 
-<div class="freight-card sea">
+      <p
+        data-en="We build the transportation solution around your cargo characteristics and required delivery timeline."
+        data-ar="نبني حل النقل وفق خصائص شحنتك والمدة المطلوبة للتسليم.">
 
-<div class="freight-content">
+        We build the transportation solution around your cargo characteristics
+        and required delivery timeline.
 
-<div class="freight-label">
-OCEAN FREIGHT
-</div>
+      </p>
 
-<h3>
-SEA
-</h3>
-
-<div class="freight-time">
-25–35 DAYS
-</div>
-
-<p>
-
-Cost-effective international shipping
-for larger volumes and commercial cargo.
-
-</p>
+    </div>
 
 
-<div class="tags">
-
-<span>
-FCL
-</span>
-
-<span>
-LCL
-</span>
-
-<span>
-COMMERCIAL CARGO
-</span>
-
-<span>
-DOOR-TO-DOOR
-</span>
-
-</div>
-
-</div>
-
-</div>
+    <div class="freight-grid">
 
 
-<div class="freight-card air">
+      <article class="freight-card air">
 
-<div class="freight-content">
-
-<div class="freight-label">
-AIR FREIGHT
-</div>
-
-<h3>
-AIR
-</h3>
-
-<div class="freight-time">
-7–10 DAYS
-</div>
-
-<p>
-
-Fast and flexible international air freight
-for urgent and time-sensitive shipments.
-
-</p>
+        <div
+          class="freight-kicker"
+          data-en="Fast / Urgent"
+          data-ar="سريع / عاجل">
+          Fast / Urgent
+        </div>
 
 
-<div class="tags">
-
-<span>
-URGENT CARGO
-</span>
-
-<span>
-SAMPLES
-</span>
-
-<span>
-HIGH VALUE
-</span>
-
-<span>
-FAST DELIVERY
-</span>
-
-</div>
-
-</div>
-
-</div>
+        <h3
+          data-en="Air Freight"
+          data-ar="الشحن الجوي">
+          Air Freight
+        </h3>
 
 
-</div>
+        <p
+          data-en="Estimated transit time: 7–10 days. Suitable for urgent cargo, samples, time-sensitive shipments and higher-value goods."
+          data-ar="المدة التقديرية: 7–10 أيام. مناسب للشحنات العاجلة والعينات والبضائع الحساسة للوقت والسلع ذات القيمة الأعلى.">
+
+          Estimated transit time: 7–10 days.
+          Suitable for urgent cargo, samples,
+          time-sensitive shipments and higher-value goods.
+
+        </p>
 
 
-<p style="
-font-size:11px;
-color:#8a938e;
-margin-top:20px;
-line-height:1.7;
-">
+        <div class="freight-meta">
 
-* Transit times are estimates and may vary depending
-on origin, destination, customs clearance, carrier
-schedules and cargo characteristics.
+          <span class="tag">7–10 Days</span>
+          <span class="tag">Urgent</span>
+          <span class="tag">Flexible</span>
 
-</p>
+        </div>
 
-</div>
+      </article>
+
+
+      <article class="freight-card sea">
+
+        <div
+          class="freight-kicker"
+          data-en="Economical / Bulk"
+          data-ar="اقتصادي / كميات كبيرة">
+          Economical / Bulk
+        </div>
+
+
+        <h3
+          data-en="Sea Freight"
+          data-ar="الشحن البحري">
+          Sea Freight
+        </h3>
+
+
+        <p
+          data-en="Estimated transit time: 25–35 days. Ideal for larger volumes and cargo where cost efficiency is a priority."
+          data-ar="المدة التقديرية: 25–35 يوماً. مثالي للكميات الكبيرة والشحنات التي تكون فيها كفاءة التكلفة أولوية.">
+
+          Estimated transit time: 25–35 days.
+          Ideal for larger volumes and cargo where cost efficiency is a priority.
+
+        </p>
+
+
+        <div class="freight-meta">
+
+          <span class="tag">25–35 Days</span>
+          <span class="tag">FCL / LCL</span>
+          <span class="tag">Cost Efficient</span>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+    <p
+      style="font-size:11px;margin-top:14px;color:#8a918c"
+      data-en="Transit times are estimates and may vary according to customs, carrier schedules, cargo characteristics, origin/destination and other operational factors."
+      data-ar="المدد الزمنية تقديرية وقد تختلف حسب الجمارك وجداول شركات النقل وطبيعة الشحنة ومكان المنشأ والوجهة وعوامل تشغيلية أخرى.">
+
+      Transit times are estimates and may vary according to customs,
+      carrier schedules, cargo characteristics, origin/destination
+      and other operational factors.
+
+    </p>
+
+  </div>
 
 </section>
 
 
-<!-- =====================================================
-     SERVICES
-===================================================== -->
+<!-- ================= SERVICES ================= -->
 
-<section class="section" id="services">
+<section class="section services" id="services">
 
-<div class="container">
+  <div class="container">
 
+    <div class="section-head">
 
-<div class="eyebrow">
-OUR CAPABILITIES
-</div>
-
-
-<h2 class="section-title">
-More Than Freight.
-</h2>
+      <div
+        class="eyebrow"
+        data-en="Our Services"
+        data-ar="خدماتنا">
+        Our Services
+      </div>
 
 
-<p class="section-description">
+      <h2
+        data-en="Everything Your Shipment Needs."
+        data-ar="كل ما تحتاجه شحنتك.">
 
-From supplier pickup to final-mile delivery,
-SAHARA manages the critical steps of your
-international supply chain.
+        Everything Your Shipment Needs.
 
-</p>
-
-
-<div class="services-grid">
+      </h2>
 
 
-<div class="service">
+      <p
+        data-en="A coordinated logistics chain designed to reduce complexity for customers importing from China into Saudi Arabia."
+        data-ar="سلسلة لوجستية منسقة مصممة لتقليل التعقيد للعملاء الذين يستوردون من الصين إلى المملكة العربية السعودية.">
 
-<div class="service-number">
-01
-</div>
+        A coordinated logistics chain designed to reduce complexity
+        for customers importing from China into Saudi Arabia.
 
-<h3>
-China Pickup
-</h3>
+      </p>
 
-<p>
-Pickup arrangements across major Chinese
-cities and industrial regions.
-</p>
-
-</div>
+    </div>
 
 
-<div class="service">
-
-<div class="service-number">
-02
-</div>
-
-<h3>
-Warehousing
-</h3>
-
-<p>
-Secure cargo receiving, storage,
-consolidation and handling.
-</p>
-
-</div>
+    <div class="services-grid">
 
 
-<div class="service">
+      <article class="service">
 
-<div class="service-number">
-03
-</div>
+        <div class="icon">⌂</div>
 
-<h3>
-Professional Packing
-</h3>
+        <h3
+          data-en="China Pickup"
+          data-ar="الاستلام في الصين">
+          China Pickup
+        </h3>
 
-<p>
-Professional packing and cargo reinforcement
-to improve transportation safety.
-</p>
+        <p
+          data-en="Supplier pickup from major Chinese cities and movement into our logistics network."
+          data-ar="استلام البضائع من الموردين في المدن الصينية الرئيسية وإدخالها إلى شبكتنا اللوجستية.">
 
-</div>
+          Supplier pickup from major Chinese cities
+          and movement into our logistics network.
 
+        </p>
 
-<div class="service">
-
-<div class="service-number">
-04
-</div>
-
-<h3>
-Export Customs
-</h3>
-
-<p>
-Experienced teams coordinate export
-documentation and customs procedures.
-</p>
-
-</div>
+      </article>
 
 
-<div class="service">
+      <article class="service">
 
-<div class="service-number">
-05
-</div>
+        <div class="icon">▦</div>
 
-<h3>
-International Freight
-</h3>
+        <h3
+          data-en="Warehousing"
+          data-ar="التخزين">
+          Warehousing
+        </h3>
 
-<p>
-Sea and air freight solutions designed
-around your cargo and schedule.
-</p>
+        <p
+          data-en="Warehouse receiving, consolidation, cargo checking and organized handling."
+          data-ar="استلام وتخزين وتجميع وفحص ومناولة منظمة للشحنات.">
 
-</div>
+          Warehouse receiving, consolidation,
+          cargo checking and organized handling.
 
+        </p>
 
-<div class="service">
-
-<div class="service-number">
-06
-</div>
-
-<h3>
-Saudi Customs
-</h3>
-
-<p>
-Local professional customs coordination
-and clearance support.
-</p>
-
-</div>
+      </article>
 
 
-<div class="service">
+      <article class="service">
 
-<div class="service-number">
-07
-</div>
+        <div class="icon">□</div>
 
-<h3>
-Saudi Warehousing
-</h3>
+        <h3
+          data-en="Professional Packing"
+          data-ar="التعبئة الاحترافية">
+          Professional Packing
+        </h3>
 
-<p>
-Local storage and cargo handling support
-for efficient distribution.
-</p>
+        <p
+          data-en="Packing support designed to prepare cargo for safe international transportation."
+          data-ar="دعم التعبئة والتغليف لتجهيز الشحنات للنقل الدولي الآمن.">
 
-</div>
+          Packing support designed to prepare cargo
+          for safe international transportation.
 
+        </p>
 
-<div class="service">
-
-<div class="service-number">
-08
-</div>
-
-<h3>
-Nationwide Delivery
-</h3>
-
-<p>
-Final-mile delivery solutions across
-Saudi Arabia to your specified address.
-</p>
-
-</div>
+      </article>
 
 
-</div>
+      <article class="service">
 
-</div>
+        <div class="icon">✓</div>
+
+        <h3
+          data-en="Export Customs"
+          data-ar="التخليص الجمركي للتصدير">
+          Export Customs
+        </h3>
+
+        <p
+          data-en="Professional export customs coordination and documentation support."
+          data-ar="تنسيق احترافي للتخليص الجمركي للتصدير ودعم المستندات.">
+
+          Professional export customs coordination
+          and documentation support.
+
+        </p>
+
+      </article>
+
+
+      <article class="service">
+
+        <div class="icon">✈</div>
+
+        <h3
+          data-en="International Freight"
+          data-ar="الشحن الدولي">
+          International Freight
+        </h3>
+
+        <p
+          data-en="Air and sea transportation options based on time, cargo and budget."
+          data-ar="خيارات النقل الجوي والبحري وفق الوقت وطبيعة الشحنة والميزانية.">
+
+          Air and sea transportation options
+          based on time, cargo and budget.
+
+        </p>
+
+      </article>
+
+
+      <article class="service">
+
+        <div class="icon">⚑</div>
+
+        <h3
+          data-en="Saudi Customs"
+          data-ar="الجمارك السعودية">
+          Saudi Customs
+        </h3>
+
+        <p
+          data-en="Local customs coordination and clearance support in Saudi Arabia."
+          data-ar="تنسيق ودعم التخليص الجمركي المحلي داخل المملكة العربية السعودية.">
+
+          Local customs coordination and clearance support
+          in Saudi Arabia.
+
+        </p>
+
+      </article>
+
+
+      <article class="service">
+
+        <div class="icon">▤</div>
+
+        <h3
+          data-en="Saudi Warehousing"
+          data-ar="المستودعات في السعودية">
+          Saudi Warehousing
+        </h3>
+
+        <p
+          data-en="Local receiving and handling options before final delivery when required."
+          data-ar="خيارات الاستلام والمناولة المحلية قبل التوصيل النهائي عند الحاجة.">
+
+          Local receiving and handling options
+          before final delivery when required.
+
+        </p>
+
+      </article>
+
+
+      <article class="service">
+
+        <div class="icon">➜</div>
+
+        <h3
+          data-en="Nationwide Delivery"
+          data-ar="التوصيل داخل المملكة">
+          Nationwide Delivery
+        </h3>
+
+        <p
+          data-en="Door-to-door delivery across Saudi Arabia through coordinated local resources."
+          data-ar="توصيل من الباب إلى الباب في جميع أنحاء المملكة عبر موارد محلية منسقة.">
+
+          Door-to-door delivery across Saudi Arabia
+          through coordinated local resources.
+
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- =====================================================
-     NETWORK
-===================================================== -->
+<!-- ================= NETWORK ================= -->
 
-<section class="section dark network" id="network">
+<section class="section network" id="network">
 
-<div class="container network-grid">
+  <div class="container network-grid">
 
 
-<div>
+    <div class="network-copy">
 
-<div class="eyebrow">
-CHINA → SAUDI ARABIA
-</div>
+      <div
+        class="eyebrow"
+        data-en="Our Network"
+        data-ar="شبكتنا">
+        Our Network
+      </div>
 
 
-<h2 class="section-title">
+      <h2
+        data-en="Connected Across China & Saudi Arabia"
+        data-ar="شبكة متصلة بين الصين والسعودية">
 
-A Logistics Network
-Built Around Your Trade
+        Connected Across China & Saudi Arabia
 
-</h2>
+      </h2>
 
 
-<p class="section-description">
+      <p
+        data-en="Our logistics operation is built around the China–Saudi corridor, with access to major Chinese cities, international transportation routes and nationwide Saudi delivery."
+        data-ar="تم بناء عملياتنا اللوجستية حول الممر بين الصين والسعودية، مع تغطية للمدن الصينية الرئيسية وطرق النقل الدولي والتوصيل إلى جميع أنحاء المملكة.">
 
-Our network connects major Chinese
-commercial and logistics centers with
-Saudi Arabia's major cities and destinations.
+        Our logistics operation is built around the China–Saudi corridor,
+        with access to major Chinese cities,
+        international transportation routes and nationwide Saudi delivery.
 
-</p>
+      </p>
 
 
-<div class="locations">
+      <div class="region">
 
+        <div
+          class="region-title"
+          data-en="China"
+          data-ar="الصين">
+          China
+        </div>
 
-<div class="location">
 
-<strong>CHINA</strong>
-Shanghai
+        <div class="region-list">
 
-</div>
+          <span>Shanghai</span>
+          <span>Ningbo</span>
+          <span>Yiwu</span>
+          <span>Shenzhen</span>
+          <span>Guangzhou</span>
+          <span>Nanjing</span>
 
+        </div>
 
-<div class="location">
+      </div>
 
-<strong>CHINA</strong>
-Ningbo
 
-</div>
+      <div class="region">
 
+        <div
+          class="region-title"
+          data-en="Saudi Arabia"
+          data-ar="المملكة العربية السعودية">
+          Saudi Arabia
+        </div>
 
-<div class="location">
 
-<strong>CHINA</strong>
-Yiwu
+        <div class="region-list">
 
-</div>
+          <span>Jeddah</span>
+          <span>Riyadh</span>
+          <span>Dammam</span>
+          <span>Makkah</span>
+          <span>Madinah</span>
+          <span>Nationwide</span>
 
+        </div>
 
-<div class="location">
+      </div>
 
-<strong>CHINA</strong>
-Shenzhen
+    </div>
 
-</div>
 
+    <div class="route-visual">
 
-<div class="location">
+      <div class="route-overlay"></div>
 
-<strong>CHINA</strong>
-Guangzhou
 
-</div>
+      <div class="route-title">
 
+        <strong>CHINA → KSA</strong>
 
-<div class="location">
+        <span
+          data-en="One integrated logistics corridor"
+          data-ar="ممر لوجستي متكامل">
+          One integrated logistics corridor
+        </span>
 
-<strong>CHINA</strong>
-Nanjing
+      </div>
 
-</div>
 
+      <div class="route-line"></div>
 
-<div class="location">
 
-<strong>SAUDI ARABIA</strong>
-Jeddah
+      <div class="route-city cn">
+        CHINA
+      </div>
 
-</div>
 
+      <div class="route-city sa">
+        SAUDI ARABIA
+      </div>
 
-<div class="location">
+    </div>
 
-<strong>SAUDI ARABIA</strong>
-Riyadh
-
-</div>
-
-
-<div class="location">
-
-<strong>SAUDI ARABIA</strong>
-Dammam
-
-</div>
-
-
-<div class="location">
-
-<strong>SAUDI ARABIA</strong>
-Makkah
-
-</div>
-
-
-<div class="location">
-
-<strong>SAUDI ARABIA</strong>
-Madinah
-
-</div>
-
-
-<div class="location">
-
-<strong>SAUDI ARABIA</strong>
-Nationwide
-
-</div>
-
-
-</div>
-
-</div>
-
-
-<div class="route">
-
-<div class="route-line"></div>
-
-<div class="route-point china">
-
-CHINA
-
-</div>
-
-<div class="route-point saudi">
-
-SAUDI ARABIA
-
-</div>
-
-</div>
-
-
-</div>
+  </div>
 
 </section>
 
 
-<!-- =====================================================
-     WHY SAHARA
-===================================================== -->
+<!-- ================= ADVANTAGE ================= -->
 
-<section class="section cream" id="why">
+<section class="section">
 
-<div class="container why-grid">
+  <div class="container">
 
+    <div class="section-head">
 
-<div>
+      <div
+        class="eyebrow"
+        data-en="The SAHARA Advantage"
+        data-ar="مزايا SAHARA">
+        The SAHARA Advantage
+      </div>
 
-<div class="eyebrow">
-WHY SAHARA
-</div>
 
+      <h2
+        data-en="Built for Reliability, Not Complexity."
+        data-ar="مصمم للموثوقية، وليس للتعقيد.">
 
-<h2 class="section-title">
+        Built for Reliability, Not Complexity.
 
-One Team.
-One Responsibility.
+      </h2>
 
-</h2>
+    </div>
 
 
-<p class="section-description">
+    <div class="why-grid">
 
-We combine international freight coordination
-with local logistics capabilities to simplify
-the entire China–Saudi supply chain.
 
-</p>
+      <article class="why-card">
 
+        <div class="icon">◈</div>
 
-<div class="why-list">
+        <strong
+          data-en="Professional Team"
+          data-ar="فريق محترف">
+          Professional Team
+        </strong>
 
+        <p
+          data-en="Experienced logistics coordination from pickup to final delivery."
+          data-ar="تنسيق لوجستي احترافي من الاستلام حتى التوصيل النهائي.">
 
-<div class="why">
+          Experienced logistics coordination
+          from pickup to final delivery.
 
-<div class="check">
-✓
-</div>
+        </p>
 
-<div>
+      </article>
 
-<h3>
-Professional Logistics Team
-</h3>
 
-<p>
-Experienced teams supporting your shipment
-from origin to destination.
-</p>
+      <article class="why-card">
 
-</div>
+        <div class="icon">▣</div>
 
-</div>
+        <strong
+          data-en="Own Resources"
+          data-ar="مواردنا الخاصة">
+          Own Resources
+        </strong>
 
+        <p
+          data-en="Pickup, warehouse and delivery resources support a more controlled service."
+          data-ar="موارد الاستلام والتخزين والتوصيل تساعد على تقديم خدمة أكثر تحكماً.">
 
-<div class="why">
+          Pickup, warehouse and delivery resources
+          support a more controlled service.
 
-<div class="check">
-✓
-</div>
+        </p>
 
-<div>
+      </article>
 
-<h3>
-Own Delivery Resources
-</h3>
 
-<p>
-Dedicated delivery resources supporting
-Saudi nationwide distribution.
-</p>
+      <article class="why-card">
 
-</div>
+        <div class="icon">◎</div>
 
-</div>
+        <strong
+          data-en="China Coverage"
+          data-ar="تغطية الصين">
+          China Coverage
+        </strong>
 
+        <p
+          data-en="Access to major Chinese production and logistics centers."
+          data-ar="وصول إلى أهم مراكز الإنتاج والخدمات اللوجستية في الصين.">
 
-<div class="why">
+          Access to major Chinese production
+          and logistics centers.
 
-<div class="check">
-✓
-</div>
+        </p>
 
-<div>
+      </article>
 
-<h3>
-China Coverage
-</h3>
 
-<p>
-Pickup, warehousing and cargo coordination
-across major Chinese cities.
-</p>
+      <article class="why-card">
 
-</div>
+        <div class="icon">⌖</div>
 
-</div>
+        <strong
+          data-en="Saudi Coverage"
+          data-ar="تغطية السعودية">
+          Saudi Coverage
+        </strong>
 
+        <p
+          data-en="Delivery solutions extending across Saudi Arabia."
+          data-ar="حلول توصيل تمتد إلى مختلف مناطق المملكة العربية السعودية.">
 
-<div class="why">
+          Delivery solutions extending across Saudi Arabia.
 
-<div class="check">
-✓
-</div>
+        </p>
 
-<div>
+      </article>
 
-<h3>
-Saudi Coverage
-</h3>
 
-<p>
-Local customs coordination and delivery
-capabilities across Saudi Arabia.
-</p>
+      <article class="why-card">
 
-</div>
+        <div class="icon">24</div>
 
-</div>
+        <strong
+          data-en="24/7 Support"
+          data-ar="دعم 24/7">
+          24/7 Support
+        </strong>
 
+        <p
+          data-en="A direct customer service channel for shipment coordination and updates."
+          data-ar="قناة مباشرة لخدمة العملاء لتنسيق الشحنات وتحديثاتها.">
 
-<div class="why">
+          A direct customer service channel
+          for shipment coordination and updates.
 
-<div class="check">
-✓
-</div>
+        </p>
 
-<div>
+      </article>
 
-<h3>
-24 / 7 Customer Support
-</h3>
 
-<p>
-Our team remains available to answer
-questions and support your shipment.
-</p>
+    </div>
 
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-
-<div class="why-image">
-
-<div class="image-caption">
-
-<strong>
-China to Saudi Arabia.
-</strong>
-
-<span>
-One reliable logistics partner from pickup
-to final delivery.
-</span>
-
-</div>
-
-</div>
-
-
-</div>
+  </div>
 
 </section>
 
 
-<!-- =====================================================
-     QUOTE
-===================================================== -->
+<!-- ================= QUOTE ================= -->
 
-<section class="section dark" id="quote">
+<section class="section quote" id="quote">
 
-<div class="container quote-grid">
+  <div class="container quote-grid">
 
 
-<div>
+    <div class="quote-copy">
 
-<div class="eyebrow">
-REQUEST A QUOTE
-</div>
+      <div
+        class="eyebrow"
+        data-en="Get a Quote"
+        data-ar="اطلب عرض سعر">
+        Get a Quote
+      </div>
 
 
-<h2 class="section-title">
+      <h2
+        data-en="Tell Us What You Need to Move."
+        data-ar="أخبرنا بما تريد شحنه.">
 
-Let's Move
-Your Cargo.
+        Tell Us What You Need to Move.
 
-</h2>
+      </h2>
 
 
-<p class="section-description">
+      <p
+        data-en="Send us the product, weight, volume and destination. Our sales team will prepare a clear quotation and recommend a suitable air or sea logistics solution."
+        data-ar="أرسل لنا نوع المنتج والوزن والحجم والوجهة. سيقوم فريق المبيعات بإعداد عرض سعر واضح واقتراح حل مناسب للشحن الجوي أو البحري.">
 
-Simply provide the basic cargo information.
-Our professional team will review your
-requirements and prepare a suitable
-logistics solution.
+        Send us the product, weight, volume and destination.
+        Our sales team will prepare a clear quotation
+        and recommend a suitable air or sea logistics solution.
 
-</p>
+      </p>
 
 
-<div class="contact">
+      <div class="contact-box">
 
-<div class="contact-label">
-LOGISTICS CONTACT
-</div>
+        <small
+          data-en="Logistics Contact"
+          data-ar="جهة الاتصال اللوجستية">
+          Logistics Contact
+        </small>
 
 
-<div class="contact-name">
-Mohammed Al-amoodi
-</div>
+        <a href="tel:+966554882896">
+          Mohammed Al-amoodi
+        </a>
 
 
-<div class="contact-line">
+        <a href="tel:+966554882896">
+          +966 55 488 2896
+        </a>
 
-☎
 
-<a href="tel:+966554882896">
-+966 55 488 2896
-</a>
+        <a href="mailto:mohammed.alamoodi@saharaksa.com">
+          mohammed.alamoodi@saharaksa.com
+        </a>
 
-</div>
+      </div>
 
+    </div>
 
-<div class="contact-line">
 
-✉
+    <form class="form" id="quoteForm">
 
-<a href="mailto:mohammed.alamoodi@saharaksa.com">
+      <div class="form-grid">
 
-mohammed.alamoodi@saharaksa.com
 
-</a>
+        <div class="field">
 
-</div>
+          <label
+            data-en="Full Name"
+            data-ar="الاسم الكامل">
+            Full Name
+          </label>
 
+          <input
+            id="name"
+            required
+            placeholder="Your name">
 
-<div class="contact-line">
+        </div>
 
-◉
 
-<a
-href="https://wa.me/966554882896"
-target="_blank">
+        <div class="field">
 
-WhatsApp
+          <label
+            data-en="Company"
+            data-ar="الشركة">
+            Company
+          </label>
 
-</a>
+          <input
+            id="company"
+            placeholder="Company name">
 
-</div>
+        </div>
 
-</div>
 
-</div>
+        <div class="field">
 
+          <label
+            data-en="WhatsApp"
+            data-ar="واتساب">
+            WhatsApp
+          </label>
 
-<div class="quote-form">
+          <input
+            id="whatsapp"
+            required
+            placeholder="+966 ...">
 
+        </div>
 
-<form id="quoteForm">
 
+        <div class="field">
 
-<div class="form-grid">
+          <label
+            data-en="Email"
+            data-ar="البريد الإلكتروني">
+            Email
+          </label>
 
+          <input
+            id="email"
+            type="email"
+            placeholder="name@company.com">
 
-<div class="form-group">
+        </div>
 
-<label>
-Full Name
-</label>
 
-<input
-type="text"
-id="name"
-placeholder="Your name"
-required>
+        <div class="field">
 
-</div>
+          <label
+            data-en="Pickup City in China"
+            data-ar="مدينة الاستلام في الصين">
+            Pickup City in China
+          </label>
 
+          <input
+            id="pickup"
+            placeholder="e.g. Yiwu / Guangzhou">
 
-<div class="form-group">
+        </div>
 
-<label>
-Company
-</label>
 
-<input
-type="text"
-id="company"
-placeholder="Company name">
+        <div class="field">
 
-</div>
+          <label
+            data-en="Delivery City in Saudi Arabia"
+            data-ar="مدينة التسليم في السعودية">
+            Delivery City in Saudi Arabia
+          </label>
 
+          <input
+            id="delivery"
+            placeholder="e.g. Jeddah / Riyadh">
 
-<div class="form-group">
+        </div>
 
-<label>
-WhatsApp
-</label>
 
-<input
-type="tel"
-id="phone"
-placeholder="+966..."
-required>
+        <div class="field">
 
-</div>
+          <label
+            data-en="Cargo / Product"
+            data-ar="البضاعة / المنتج">
+            Cargo / Product
+          </label>
 
+          <input
+            id="cargo"
+            required
+            placeholder="What are you shipping?">
 
-<div class="form-group">
+        </div>
 
-<label>
-Email
-</label>
 
-<input
-type="email"
-id="email"
-placeholder="Email address">
+        <div class="field">
 
-</div>
+          <label
+            data-en="Transport Mode"
+            data-ar="نوع الشحن">
+            Transport Mode
+          </label>
 
+          <select id="mode">
 
-<div class="form-group">
+            <option value="Air Freight">
+              Air Freight
+            </option>
 
-<label>
-Pickup City
-</label>
+            <option value="Sea Freight">
+              Sea Freight
+            </option>
 
-<input
-type="text"
-id="pickup"
-placeholder="e.g. Yiwu, China">
+            <option value="Not Sure">
+              Not Sure — Recommend for me
+            </option>
 
-</div>
+          </select>
 
+        </div>
 
-<div class="form-group">
 
-<label>
-Delivery City
-</label>
+        <div class="field">
 
-<input
-type="text"
-id="delivery"
-placeholder="e.g. Jeddah">
+          <label
+            data-en="Weight"
+            data-ar="الوزن">
+            Weight
+          </label>
 
-</div>
+          <input
+            id="weight"
+            placeholder="e.g. 500 kg">
 
+        </div>
 
-<div class="form-group">
 
-<label>
-Cargo / Product
-</label>
+        <div class="field">
 
-<input
-type="text"
-id="product"
-placeholder="What are you shipping?">
+          <label
+            data-en="Volume"
+            data-ar="الحجم">
+            Volume
+          </label>
 
-</div>
+          <input
+            id="volume"
+            placeholder="e.g. 2 CBM">
 
+        </div>
 
-<div class="form-group">
 
-<label>
-Transport Mode
-</label>
+        <div class="field full">
 
-<select id="mode">
+          <label
+            data-en="Additional Information"
+            data-ar="معلومات إضافية">
+            Additional Information
+          </label>
 
-<option>
-Sea Freight
-</option>
+          <textarea
+            id="details"
+            placeholder="Cargo details, required delivery time, special requirements..."></textarea>
 
-<option>
-Air Freight
-</option>
+        </div>
 
-<option>
-Not Sure - Recommend
-</option>
 
-</select>
+      </div>
 
-</div>
 
+      <button
+        type="submit"
+        class="btn btn-dark"
+        data-en="Send Quote Request via WhatsApp"
+        data-ar="إرسال طلب عرض السعر عبر واتساب">
 
-<div class="form-group">
+        Send Quote Request via WhatsApp
 
-<label>
-Weight
-</label>
+      </button>
 
-<input
-type="text"
-id="weight"
-placeholder="e.g. 1,500 kg">
 
-</div>
+      <div
+        class="form-note"
+        data-en="Your request will open WhatsApp with the shipment information already prepared. No online payment is required."
+        data-ar="سيتم فتح واتساب مع تجهيز معلومات الشحنة مسبقاً. لا يلزم أي دفع إلكتروني.">
 
+        Your request will open WhatsApp with the shipment information already prepared.
+        No online payment is required.
 
-<div class="form-group">
+      </div>
 
-<label>
-Volume
-</label>
+    </form>
 
-<input
-type="text"
-id="volume"
-placeholder="e.g. 8 CBM">
-
-</div>
-
-
-<div class="form-group full">
-
-<label>
-Additional Information
-</label>
-
-<textarea
-id="message"
-placeholder="Cargo details, delivery requirements, timeline, etc."></textarea>
-
-</div>
-
-
-</div>
-
-
-<button
-type="submit"
-class="btn btn-gold submit">
-
-REQUEST MY QUOTE
-
-</button>
-
-
-</form>
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-<div class="container">
+</main>
 
 
-<div class="footer-grid">
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+  <div class="container footer-grid">
 
 
-<div>
+    <div class="footer-brand">
 
-<div class="footer-logo">
+      <div class="logo-wrap">
 
-<img
-src="sahara-logo.png"
-alt="SAHARA">
+        <img
+          class="logo"
+          src="sahara-logo.png"
+          alt="SAHARA">
 
-</div>
-
-
-<p class="footer-description">
-
-China to Saudi Arabia international logistics.
-
-Door-to-door solutions covering pickup,
-customs, sea freight, air freight,
-warehousing and final delivery.
-
-</p>
-
-</div>
+      </div>
 
 
-<div>
+      <p
+        data-en="SAHARA KSA Logistics — professional China to Saudi Arabia door-to-door logistics, built around reliable service, coordinated operations and practical solutions."
+        data-ar="SAHARA KSA Logistics — خدمات لوجستية احترافية من الصين إلى السعودية من الباب إلى الباب، مبنية على الخدمة الموثوقة والعمليات المنسقة والحلول العملية.">
 
-<div class="footer-title">
-SERVICES
-</div>
+        SAHARA KSA Logistics — professional China to Saudi Arabia
+        door-to-door logistics, built around reliable service,
+        coordinated operations and practical solutions.
 
-<div class="footer-links">
+      </p>
 
-<a href="#solutions">
-Door-to-Door
-</a>
-
-<a href="#freight">
-Sea Freight
-</a>
-
-<a href="#freight">
-Air Freight
-</a>
-
-<a href="#services">
-Warehousing
-</a>
-
-<a href="#services">
-Customs Clearance
-</a>
-
-</div>
-
-</div>
+    </div>
 
 
-<div>
+    <div>
 
-<div class="footer-title">
-NETWORK
-</div>
-
-<div class="footer-links">
-
-<a href="#network">
-China
-</a>
-
-<a href="#network">
-Jeddah
-</a>
-
-<a href="#network">
-Riyadh
-</a>
-
-<a href="#network">
-Dammam
-</a>
-
-<a href="#network">
-Saudi Arabia
-</a>
-
-</div>
-
-</div>
+      <div
+        class="footer-title"
+        data-en="Services"
+        data-ar="الخدمات">
+        Services
+      </div>
 
 
-<div>
+      <div class="footer-links">
 
-<div class="footer-title">
-CONTACT
-</div>
+        <a
+          href="#services"
+          data-en="China Pickup"
+          data-ar="الاستلام في الصين">
+          China Pickup
+        </a>
 
-<div class="footer-links">
+        <a
+          href="#freight"
+          data-en="Air Freight"
+          data-ar="الشحن الجوي">
+          Air Freight
+        </a>
 
-<a href="tel:+966554882896">
-+966 55 488 2896
-</a>
+        <a
+          href="#freight"
+          data-en="Sea Freight"
+          data-ar="الشحن البحري">
+          Sea Freight
+        </a>
 
-<a href="mailto:mohammed.alamoodi@saharaksa.com">
+        <a
+          href="#services"
+          data-en="Customs Clearance"
+          data-ar="التخليص الجمركي">
+          Customs Clearance
+        </a>
 
-mohammed.alamoodi@saharaksa.com
+        <a
+          href="#services"
+          data-en="Nationwide Delivery"
+          data-ar="التوصيل داخل المملكة">
+          Nationwide Delivery
+        </a>
 
-</a>
+      </div>
 
-<a
-href="https://wa.me/966554882896"
-target="_blank">
-
-WhatsApp
-
-</a>
-
-<a href="#quote">
-Request a Quote
-</a>
-
-</div>
-
-</div>
-
-
-</div>
+    </div>
 
 
-<div class="footer-bottom">
+    <div>
 
-<span>
-© 2026 SAHARA Group of Companies. All Rights Reserved.
-</span>
+      <div
+        class="footer-title"
+        data-en="Network"
+        data-ar="الشبكة">
+        Network
+      </div>
 
-<span>
-China → Saudi Arabia | International Logistics
-</span>
 
-</div>
+      <div class="footer-links">
 
-</div>
+        <a href="#network">China</a>
+        <a href="#network">Saudi Arabia</a>
+        <a href="#network">Jeddah</a>
+        <a href="#network">Riyadh</a>
+        <a href="#network">Dammam</a>
+
+      </div>
+
+    </div>
+
+
+    <div>
+
+      <div
+        class="footer-title"
+        data-en="Contact"
+        data-ar="اتصل بنا">
+        Contact
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="tel:+966554882896">
+          +966 55 488 2896
+        </a>
+
+        <a href="mailto:mohammed.alamoodi@saharaksa.com">
+          mohammed.alamoodi@saharaksa.com
+        </a>
+
+        <a
+          href="https://wa.me/966554882896"
+          target="_blank"
+          rel="noopener">
+          WhatsApp
+        </a>
+
+        <a
+          href="#quote"
+          data-en="Request a Quote"
+          data-ar="اطلب عرض سعر">
+          Request a Quote
+        </a>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <span>
+      © <span id="year"></span>
+      SAHARA KSA Logistics. All rights reserved.
+    </span>
+
+
+    <span
+      data-en="China → Saudi Arabia | Door-to-Door Logistics"
+      data-ar="الصين ← السعودية | خدمات لوجستية من الباب إلى الباب">
+
+      China → Saudi Arabia | Door-to-Door Logistics
+
+    </span>
+
+  </div>
 
 </footer>
 
 
-<!-- =====================================================
-     FLOATING WHATSAPP
-===================================================== -->
+<!-- ================= FLOATING WHATSAPP ================= -->
 
 <a
-href="https://wa.me/966554882896"
-target="_blank"
-class="whatsapp"
-aria-label="WhatsApp">
+  class="wa"
+  href="https://wa.me/966554882896?text=Hello%20SAHARA%20KSA%20Logistics%2C%20I%20need%20a%20China-to-Saudi%20shipping%20quotation."
+  target="_blank"
+  rel="noopener"
+  aria-label="WhatsApp">
 
-☎
+  WA
 
 </a>
 
 
 <script>
 
+const header = document.getElementById('header');
 
-/* =====================================================
-   HEADER SCROLL
-===================================================== */
+const navLinks = document.getElementById('navLinks');
 
-window.addEventListener(
-"scroll",
-function(){
+const menuBtn = document.getElementById('menuBtn');
 
-const header=
-document.getElementById("header");
+const enBtn = document.getElementById('enBtn');
 
-if(window.scrollY>40){
+const arBtn = document.getElementById('arBtn');
 
-header.classList.add("scrolled");
 
-}else{
+/* Header scroll */
 
-header.classList.remove("scrolled");
+window.addEventListener('scroll', () => {
+
+  header.classList.toggle(
+    'scrolled',
+    window.scrollY > 20
+  );
+
+});
+
+
+/* Mobile menu */
+
+menuBtn.addEventListener('click', () => {
+
+  navLinks.classList.toggle('open');
+
+});
+
+
+document.querySelectorAll('.nav-links a').forEach(a => {
+
+  a.addEventListener('click', () => {
+
+    navLinks.classList.remove('open');
+
+  });
+
+});
+
+
+/* Language */
+
+function setLanguage(lang){
+
+  const isAR = lang === 'ar';
+
+  document.body.classList.toggle(
+    'ar',
+    isAR
+  );
+
+  document.documentElement.lang =
+    isAR ? 'ar' : 'en';
+
+  document.documentElement.dir =
+    isAR ? 'rtl' : 'ltr';
+
+
+  document.querySelectorAll('[data-en]').forEach(el => {
+
+    const value =
+      isAR
+      ? el.getAttribute('data-ar')
+      : el.getAttribute('data-en');
+
+    if(value !== null){
+
+      el.innerHTML = value;
+
+    }
+
+  });
+
+
+  document.querySelectorAll(
+    'input, textarea'
+  ).forEach(el => {
+
+    const en =
+      el.getAttribute(
+        'data-placeholder-en'
+      );
+
+    const ar =
+      el.getAttribute(
+        'data-placeholder-ar'
+      );
+
+    if(en && ar){
+
+      el.placeholder =
+        isAR ? ar : en;
+
+    }
+
+  });
+
+
+  enBtn.classList.toggle(
+    'active',
+    !isAR
+  );
+
+  arBtn.classList.toggle(
+    'active',
+    isAR
+  );
+
+
+  localStorage.setItem(
+    'saharaLang',
+    lang
+  );
 
 }
 
-});
 
-
-/* =====================================================
-   MOBILE MENU
-===================================================== */
-
-function toggleMenu(){
-
-document
-.getElementById("navLinks")
-.classList
-.toggle("active");
-
-}
-
-
-document
-.querySelectorAll(".nav-links a")
-.forEach(function(link){
-
-link.addEventListener(
-"click",
-function(){
-
-document
-.getElementById("navLinks")
-.classList
-.remove("active");
-
-});
-
-});
-
-
-/* =====================================================
-   LANGUAGE
-===================================================== */
-
-let language="en";
-
-
-function toggleLanguage(){
-
-const elements=
-document.querySelectorAll("[data-en]");
-
-const button=
-document.getElementById("languageBtn");
-
-
-if(language==="en"){
-
-language="ar";
-
-document.body.classList.add("rtl");
-
-document.documentElement.lang="ar";
-
-document.documentElement.dir="rtl";
-
-button.innerText="EN";
-
-
-elements.forEach(function(element){
-
-element.innerText=
-element.getAttribute("data-ar");
-
-});
-
-
-}else{
-
-language="en";
-
-document.body.classList.remove("rtl");
-
-document.documentElement.lang="en";
-
-document.documentElement.dir="ltr";
-
-button.innerText="AR";
-
-
-elements.forEach(function(element){
-
-element.innerText=
-element.getAttribute("data-en");
-
-});
-
-}
-
-}
-
-
-/* =====================================================
-   QUOTE FORM → WHATSAPP
-===================================================== */
-
-document
-.getElementById("quoteForm")
-.addEventListener(
-"submit",
-function(event){
-
-event.preventDefault();
-
-
-const name=
-document.getElementById("name").value;
-
-const company=
-document.getElementById("company").value;
-
-const phone=
-document.getElementById("phone").value;
-
-const email=
-document.getElementById("email").value;
-
-const pickup=
-document.getElementById("pickup").value;
-
-const delivery=
-document.getElementById("delivery").value;
-
-const product=
-document.getElementById("product").value;
-
-const mode=
-document.getElementById("mode").value;
-
-const weight=
-document.getElementById("weight").value;
-
-const volume=
-document.getElementById("volume").value;
-
-const message=
-document.getElementById("message").value;
-
-
-const whatsappMessage=
-
-"SAHARA KSA LOGISTICS - QUOTE REQUEST\n\n"+
-
-"Name: "+name+"\n"+
-
-"Company: "+company+"\n"+
-
-"WhatsApp: "+phone+"\n"+
-
-"Email: "+email+"\n"+
-
-"Pickup City: "+pickup+"\n"+
-
-"Delivery City: "+delivery+"\n"+
-
-"Cargo / Product: "+product+"\n"+
-
-"Transport Mode: "+mode+"\n"+
-
-"Weight: "+weight+"\n"+
-
-"Volume: "+volume+"\n\n"+
-
-"Additional Information:\n"+
-
-message;
-
-
-const url=
-
-"https://wa.me/966554882896?text="+
-encodeURIComponent(whatsappMessage);
-
-
-window.open(
-url,
-"_blank"
+enBtn.addEventListener(
+  'click',
+  () => setLanguage('en')
 );
 
+
+arBtn.addEventListener(
+  'click',
+  () => setLanguage('ar')
+);
+
+
+/* Form placeholders */
+
+const placeholders = {
+
+  name:[
+    "Your name",
+    "اسمك"
+  ],
+
+  company:[
+    "Company name",
+    "اسم الشركة"
+  ],
+
+  whatsapp:[
+    "+966 ...",
+    "+966 ..."
+  ],
+
+  email:[
+    "name@company.com",
+    "name@company.com"
+  ],
+
+  pickup:[
+    "e.g. Yiwu / Guangzhou",
+    "مثال: ييوو / قوانغتشو"
+  ],
+
+  delivery:[
+    "e.g. Jeddah / Riyadh",
+    "مثال: جدة / الرياض"
+  ],
+
+  cargo:[
+    "What are you shipping?",
+    "ما هي البضاعة التي تريد شحنها؟"
+  ],
+
+  weight:[
+    "e.g. 500 kg",
+    "مثال: 500 كجم"
+  ],
+
+  volume:[
+    "e.g. 2 CBM",
+    "مثال: 2 متر مكعب"
+  ],
+
+  details:[
+    "Cargo details, required delivery time, special requirements...",
+    "تفاصيل الشحنة، وقت التسليم المطلوب، المتطلبات الخاصة..."
+  ]
+
+};
+
+
+Object.keys(placeholders).forEach(id => {
+
+  const el =
+    document.getElementById(id);
+
+  if(el){
+
+    el.setAttribute(
+      'data-placeholder-en',
+      placeholders[id][0]
+    );
+
+    el.setAttribute(
+      'data-placeholder-ar',
+      placeholders[id][1]
+    );
+
+  }
+
 });
 
+
+/* Quote Form */
+
+document
+  .getElementById('quoteForm')
+  .addEventListener(
+    'submit',
+    function(e){
+
+      e.preventDefault();
+
+
+      const get = id => {
+
+        return document
+          .getElementById(id)
+          .value
+          .trim();
+
+      };
+
+
+      const msg =
+
+`Hello SAHARA KSA Logistics,
+
+I would like to request a China → Saudi Arabia logistics quotation.
+
+Full Name: ${get('name')}
+
+Company: ${get('company') || '-'}
+
+WhatsApp: ${get('whatsapp')}
+
+Email: ${get('email') || '-'}
+
+Pickup City in China: ${get('pickup') || '-'}
+
+Delivery City in Saudi Arabia: ${get('delivery') || '-'}
+
+Cargo / Product: ${get('cargo')}
+
+Transport Mode: ${get('mode')}
+
+Weight: ${get('weight') || '-'}
+
+Volume: ${get('volume') || '-'}
+
+Additional Information: ${get('details') || '-'}
+
+Please provide your best quotation and recommended logistics solution.`;
+
+
+      window.open(
+
+        'https://wa.me/966554882896?text='
+        +
+        encodeURIComponent(msg),
+
+        '_blank'
+
+      );
+
+    }
+  );
+
+
+/* Year */
+
+document
+  .getElementById('year')
+  .textContent =
+  new Date().getFullYear();
+
+
+/* Remember language */
+
+const savedLang =
+  localStorage.getItem('saharaLang');
+
+if(savedLang === 'ar'){
+
+  setLanguage('ar');
+
+}
 
 </script>
 
-
 </body>
-
 </html>
