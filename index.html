@@ -252,6 +252,7 @@ header{
 .hero-label{
     display:inline-flex;
     align-items:center;
+    justify-content:flex-start;
     gap:10px;
     border:1px solid rgba(201,164,92,.5);
     background:rgba(5,17,27,.45);
@@ -263,14 +264,19 @@ header{
     letter-spacing:2px;
     text-transform:uppercase;
     margin-bottom:28px;
+
+    /* NEW: keep the complete title in one clean horizontal line */
+    white-space:nowrap;
+    width:max-content;
+    max-width:100%;
 }
 
-.hero-label span{
-    width:7px;
-    height:7px;
-    background:var(--gold);
-    border-radius:50%;
-    display:inline-block;
+.hero-label span:last-child{
+    white-space:nowrap;
+}
+
+.hero-label > span:first-child{
+    flex:none;
 }
 
 .hero h1{
@@ -1373,6 +1379,13 @@ footer{
     .route-line::after{
         right:50%;
     }
+
+    /* Keep the China–Saudi title visually horizontal */
+    .hero-label{
+        font-size:10px;
+        letter-spacing:1.7px;
+        padding:9px 13px;
+    }
 }
 
 
@@ -1441,6 +1454,32 @@ footer{
     .hero-trust{
         margin-top:45px;
         gap:18px;
+    }
+
+    /* =====================================================
+       MOBILE HERO LABEL
+       Keep "YOUR CHINA–SAUDI LOGISTICS PARTNER"
+       as one clean horizontal line
+       ===================================================== */
+
+    .hero-label{
+        width:100%;
+        max-width:100%;
+        justify-content:flex-start;
+        gap:7px;
+        padding:8px 10px;
+        font-size:8px;
+        letter-spacing:1.15px;
+        white-space:nowrap;
+    }
+
+    .hero-label span:first-child{
+        width:6px;
+        height:6px;
+    }
+
+    .hero-label span:last-child{
+        white-space:nowrap;
     }
 
     .route-statement-inner{
@@ -2162,8 +2201,6 @@ footer{
         <div class="services-grid">
 
 
-            <!-- Ocean -->
-
             <div class="service-card">
 
                 <div class="service-image">
@@ -2190,8 +2227,6 @@ footer{
 
             </div>
 
-
-            <!-- Air -->
 
             <div class="service-card">
 
@@ -2220,8 +2255,6 @@ footer{
             </div>
 
 
-            <!-- Road -->
-
             <div class="service-card">
 
                 <div class="service-image">
@@ -2248,8 +2281,6 @@ footer{
 
             </div>
 
-
-            <!-- Warehouse -->
 
             <div class="service-card">
 
@@ -2278,8 +2309,6 @@ footer{
             </div>
 
 
-            <!-- Port -->
-
             <div class="service-card">
 
                 <div class="service-image">
@@ -2306,8 +2335,6 @@ footer{
 
             </div>
 
-
-            <!-- Door to Door -->
 
             <div class="service-card">
 
@@ -2832,21 +2859,6 @@ footer{
                     <div class="contact-item">
 
                         <div class="contact-label"
-                             data-en="CONTACT PERSON"
-                             data-ar="جهة الاتصال">
-                            CONTACT PERSON
-                        </div>
-
-                        <div class="contact-value">
-                            Mohammed Al-amoodi
-                        </div>
-
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-label"
                              data-en="PHONE / WHATSAPP"
                              data-ar="الهاتف / واتساب">
                             PHONE / WHATSAPP
@@ -2857,25 +2869,6 @@ footer{
                             <a href="https://wa.me/966554882896"
                                target="_blank">
                                 +966 55 488 2896
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-label"
-                             data-en="DIRECT EMAIL"
-                             data-ar="البريد الإلكتروني المباشر">
-                            DIRECT EMAIL
-                        </div>
-
-                        <div class="contact-value">
-
-                            <a href="mailto:mohammed.alamoodi@saharaksa.com">
-                                mohammed.alamoodi@saharaksa.com
                             </a>
 
                         </div>
@@ -3311,10 +3304,6 @@ footer{
 
 <script>
 
-/* =========================================================
-   LANGUAGE SYSTEM
-   ========================================================= */
-
 const enBtn = document.getElementById("enBtn");
 const arBtn = document.getElementById("arBtn");
 
@@ -3363,10 +3352,6 @@ arBtn.addEventListener("click",function(){
 });
 
 
-/* =========================================================
-   REMEMBER LANGUAGE
-   ========================================================= */
-
 const savedLanguage = localStorage.getItem("saharaLanguage");
 
 if(savedLanguage === "ar"){
@@ -3375,10 +3360,6 @@ if(savedLanguage === "ar"){
     setLanguage("en");
 }
 
-
-/* =========================================================
-   MOBILE MENU
-   ========================================================= */
 
 const mobileMenu = document.getElementById("mobileMenu");
 const mobileNav = document.getElementById("mobileNav");
@@ -3389,10 +3370,6 @@ mobileMenu.addEventListener("click",function(){
 
 });
 
-
-/* =========================================================
-   CLOSE MOBILE MENU AFTER CLICK
-   ========================================================= */
 
 document.querySelectorAll(".mobile-nav a").forEach(link => {
 
